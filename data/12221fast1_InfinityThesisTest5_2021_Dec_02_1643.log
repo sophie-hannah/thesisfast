@@ -1,0 +1,1256 @@
+2.6162 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+30.5777 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1., 1., 1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x147efaac8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1467a3128>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1440,  900]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+30.5781 	EXP 	window1: mouseVisible = True
+30.5782 	EXP 	window1: recordFrameIntervals = False
+30.7387 	EXP 	window1: recordFrameIntervals = True
+30.9224 	EXP 	window1: recordFrameIntervals = False
+32.0221 	EXP 	window1: mouseVisible = True
+32.0969 	EXP 	Created Instr1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Instr1', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+32.1666 	EXP 	Created fixcross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='fixcross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+32.1690 	EXP 	Created Fasttext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Fasttext', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+32.2506 	EXP 	Sound Timer set volume 1.000
+32.3603 	EXP 	Created EndStudyText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='EndStudyText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Thank you for completing this study', units='height', win=Window(...), wrapWidth=1)
+32.3927 	EXP 	window1: mouseVisible = False
+32.4141 	EXP 	Imported SpeededInstructionsSheet.xlsx as conditions, 3 conditions, 1 params
+32.4166 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+32.4172 	EXP 	New trial (rep=0, index=0): {'FastInstructions': 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false as quickly as possible without sacrificing accuracy. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'}
+32.4883 	EXP 	Instr1: text = 'You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false as quickly as possible without sacrificing accuracy. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue'
+32.4883 	EXP 	Instr1: autoDraw = True
+34.9277 	DATA 	Keypress: e
+34.9422 	EXP 	New trial (rep=0, index=1): {'FastInstructions': 'Each statement will appear on your screen for 5 seconds and you will have those 5 seconds to decide if it is true or false before the next statement appears. There will be a timer on your screen and a reminder when you have 2 seconds remaining. If you do not respond, that answer will be considered incorrect and the task will move on to the next statement. Press E to continue'}
+34.9890 	EXP 	Instr1: autoDraw = False
+34.9890 	EXP 	Instr1: text = 'Each statement will appear on your screen for 5 seconds and you will have those 5 seconds to decide if it is true or false before the next statement appears. There will be a timer on your screen and a reminder when you have 2 seconds remaining. If you do not respond, that answer will be considered incorrect and the task will move on to the next statement. Press E to continue'
+34.9890 	EXP 	Instr1: autoDraw = True
+37.0235 	EXP 	New trial (rep=0, index=2): {'FastInstructions': 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'}
+37.0430 	DATA 	Keypress: e
+37.0554 	EXP 	Instr1: autoDraw = False
+37.0554 	EXP 	Instr1: text = 'If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue'
+37.0554 	EXP 	Instr1: autoDraw = True
+38.5590 	DATA 	Keypress: e
+39.9089 	EXP 	Imported InfinityThesisTest5.xlsx as conditions, 152 conditions, 2 params
+39.9152 	EXP 	Created sequence: random, trialTypes=152, nReps=1, seed=None
+39.9157 	EXP 	New trial (rep=0, index=0): {'Statement': 'Pelicans are alive', 'Correct': 'e'}
+39.9352 	DATA 	Keypress: e
+39.9550 	EXP 	Instr1: autoDraw = False
+39.9550 	EXP 	Fasttext: text = 'Pelicans are alive'
+39.9550 	EXP 	fixcross: autoDraw = True
+40.4044 	EXP 	fixcross: autoDraw = False
+40.4218 	EXP 	Fasttext: autoDraw = True
+41.3742 	EXP 	New trial (rep=0, index=1): {'Statement': 'A minute cannot go on forever', 'Correct': 'e'}
+41.3931 	DATA 	Keypress: e
+41.4052 	EXP 	fixcross: autoDraw = False
+41.4052 	EXP 	Fasttext: autoDraw = False
+41.4052 	EXP 	Fasttext: text = 'A minute cannot go on forever'
+41.4052 	EXP 	fixcross: autoDraw = True
+41.8554 	EXP 	fixcross: autoDraw = False
+41.8886 	EXP 	Fasttext: autoDraw = True
+45.6249 	EXP 	New trial (rep=0, index=2): {'Statement': 'Space cannot go on forever', 'Correct': 'i'}
+45.6353 	DATA 	Keypress: e
+45.6556 	EXP 	fixcross: autoDraw = False
+45.6556 	EXP 	Fasttext: autoDraw = False
+45.6556 	EXP 	Fasttext: text = 'Space cannot go on forever'
+45.6556 	EXP 	fixcross: autoDraw = True
+46.1060 	EXP 	fixcross: autoDraw = False
+46.1393 	EXP 	Fasttext: autoDraw = True
+47.6404 	EXP 	New trial (rep=0, index=3): {'Statement': 'Spatial intervals can go on forever', 'Correct': 'i'}
+47.6500 	DATA 	Keypress: e
+47.6569 	EXP 	fixcross: autoDraw = False
+47.6569 	EXP 	Fasttext: autoDraw = False
+47.6569 	EXP 	Fasttext: text = 'Spatial intervals can go on forever'
+47.6569 	EXP 	fixcross: autoDraw = True
+48.1056 	EXP 	fixcross: autoDraw = False
+48.1394 	EXP 	Fasttext: autoDraw = True
+50.4080 	EXP 	New trial (rep=0, index=4): {'Statement': 'Mittens need nutrients', 'Correct': 'i'}
+50.4170 	DATA 	Keypress: i
+50.4231 	EXP 	fixcross: autoDraw = False
+50.4231 	EXP 	Fasttext: autoDraw = False
+50.4231 	EXP 	Fasttext: text = 'Mittens need nutrients'
+50.4231 	EXP 	fixcross: autoDraw = True
+50.8726 	EXP 	fixcross: autoDraw = False
+50.9059 	EXP 	Fasttext: autoDraw = True
+52.1409 	EXP 	New trial (rep=0, index=5): {'Statement': 'A triangle is an animal', 'Correct': 'i'}
+52.1486 	DATA 	Keypress: i
+52.1557 	EXP 	fixcross: autoDraw = False
+52.1557 	EXP 	Fasttext: autoDraw = False
+52.1557 	EXP 	Fasttext: text = 'A triangle is an animal'
+52.1557 	EXP 	fixcross: autoDraw = True
+52.6058 	EXP 	fixcross: autoDraw = False
+52.6394 	EXP 	Fasttext: autoDraw = True
+53.6744 	EXP 	New trial (rep=0, index=6): {'Statement': 'Jupiter is the planet we live on', 'Correct': 'i'}
+53.6841 	DATA 	Keypress: e
+53.6900 	EXP 	fixcross: autoDraw = False
+53.6900 	EXP 	Fasttext: autoDraw = False
+53.6900 	EXP 	Fasttext: text = 'Jupiter is the planet we live on'
+53.6900 	EXP 	fixcross: autoDraw = True
+54.1398 	EXP 	fixcross: autoDraw = False
+54.1725 	EXP 	Fasttext: autoDraw = True
+57.7752 	EXP 	New trial (rep=0, index=7): {'Statement': 'A motorcycle is a vehicle', 'Correct': 'e'}
+57.7833 	DATA 	Keypress: i
+57.7905 	EXP 	fixcross: autoDraw = False
+57.7905 	EXP 	Fasttext: autoDraw = False
+57.7905 	EXP 	Fasttext: text = 'A motorcycle is a vehicle'
+57.7905 	EXP 	fixcross: autoDraw = True
+58.2391 	EXP 	fixcross: autoDraw = False
+58.2734 	EXP 	Fasttext: autoDraw = True
+59.3917 	EXP 	New trial (rep=0, index=8): {'Statement': 'A rocketship is used to write', 'Correct': 'i'}
+59.4017 	DATA 	Keypress: e
+59.4234 	EXP 	fixcross: autoDraw = False
+59.4234 	EXP 	Fasttext: autoDraw = False
+59.4234 	EXP 	Fasttext: text = 'A rocketship is used to write'
+59.4234 	EXP 	fixcross: autoDraw = True
+59.8736 	EXP 	fixcross: autoDraw = False
+59.8897 	EXP 	Fasttext: autoDraw = True
+61.1767 	EXP 	New trial (rep=0, index=9): {'Statement': 'Frost is composed of matter', 'Correct': 'e'}
+61.1868 	DATA 	Keypress: i
+61.2057 	EXP 	fixcross: autoDraw = False
+61.2057 	EXP 	Fasttext: autoDraw = False
+61.2057 	EXP 	Fasttext: text = 'Frost is composed of matter'
+61.2057 	EXP 	fixcross: autoDraw = True
+61.6568 	EXP 	fixcross: autoDraw = False
+61.6899 	EXP 	Fasttext: autoDraw = True
+63.2447 	DATA 	Keypress: e
+63.2584 	EXP 	New trial (rep=0, index=10): {'Statement': 'Tornadoes reproduce', 'Correct': 'i'}
+63.2734 	EXP 	fixcross: autoDraw = False
+63.2734 	EXP 	Fasttext: autoDraw = False
+63.2734 	EXP 	Fasttext: text = 'Tornadoes reproduce'
+63.2734 	EXP 	fixcross: autoDraw = True
+63.7243 	EXP 	fixcross: autoDraw = False
+63.7569 	EXP 	Fasttext: autoDraw = True
+65.1094 	EXP 	New trial (rep=0, index=11): {'Statement': 'Intervals of time can be further divided', 'Correct': 'e'}
+65.1196 	DATA 	Keypress: i
+65.1407 	EXP 	fixcross: autoDraw = False
+65.1407 	EXP 	Fasttext: autoDraw = False
+65.1407 	EXP 	Fasttext: text = 'Intervals of time can be further divided'
+65.1407 	EXP 	fixcross: autoDraw = True
+65.5900 	EXP 	fixcross: autoDraw = False
+65.6068 	EXP 	Fasttext: autoDraw = True
+69.5754 	EXP 	New trial (rep=0, index=12): {'Statement': 'Comets are alive', 'Correct': 'i'}
+69.5829 	DATA 	Keypress: e
+69.5905 	EXP 	fixcross: autoDraw = False
+69.5905 	EXP 	Fasttext: autoDraw = False
+69.5905 	EXP 	Fasttext: text = 'Comets are alive'
+69.5905 	EXP 	fixcross: autoDraw = True
+70.0403 	EXP 	fixcross: autoDraw = False
+70.0744 	EXP 	Fasttext: autoDraw = True
+73.9423 	EXP 	New trial (rep=0, index=13): {'Statement': 'Intervals of time are endless', 'Correct': 'i'}
+73.9495 	DATA 	Keypress: i
+73.9576 	EXP 	fixcross: autoDraw = False
+73.9576 	EXP 	Fasttext: autoDraw = False
+73.9576 	EXP 	Fasttext: text = 'Intervals of time are endless'
+73.9576 	EXP 	fixcross: autoDraw = True
+74.4079 	EXP 	fixcross: autoDraw = False
+74.4405 	EXP 	Fasttext: autoDraw = True
+76.0617 	DATA 	Keypress: i
+76.0763 	EXP 	New trial (rep=0, index=14): {'Statement': 'Hammers are alive', 'Correct': 'i'}
+76.0902 	EXP 	fixcross: autoDraw = False
+76.0902 	EXP 	Fasttext: autoDraw = False
+76.0902 	EXP 	Fasttext: text = 'Hammers are alive'
+76.0902 	EXP 	fixcross: autoDraw = True
+76.5408 	EXP 	fixcross: autoDraw = False
+76.5737 	EXP 	Fasttext: autoDraw = True
+78.4258 	EXP 	New trial (rep=0, index=15): {'Statement': 'Mushrooms reproduce', 'Correct': 'e'}
+78.4330 	DATA 	Keypress: i
+78.4410 	EXP 	fixcross: autoDraw = False
+78.4410 	EXP 	Fasttext: autoDraw = False
+78.4410 	EXP 	Fasttext: text = 'Mushrooms reproduce'
+78.4410 	EXP 	fixcross: autoDraw = True
+78.8910 	EXP 	fixcross: autoDraw = False
+78.9245 	EXP 	Fasttext: autoDraw = True
+80.5272 	EXP 	New trial (rep=0, index=16): {'Statement': 'Space is endless', 'Correct': 'e'}
+80.5342 	DATA 	Keypress: e
+80.5412 	EXP 	fixcross: autoDraw = False
+80.5412 	EXP 	Fasttext: autoDraw = False
+80.5412 	EXP 	Fasttext: text = 'Space is endless'
+80.5412 	EXP 	fixcross: autoDraw = True
+80.9915 	EXP 	fixcross: autoDraw = False
+81.0246 	EXP 	Fasttext: autoDraw = True
+83.2425 	EXP 	New trial (rep=0, index=17): {'Statement': 'Spatial intervals are endless', 'Correct': 'i'}
+83.2500 	DATA 	Keypress: e
+83.2577 	EXP 	fixcross: autoDraw = False
+83.2577 	EXP 	Fasttext: autoDraw = False
+83.2577 	EXP 	Fasttext: text = 'Spatial intervals are endless'
+83.2577 	EXP 	fixcross: autoDraw = True
+83.7081 	EXP 	fixcross: autoDraw = False
+83.7418 	EXP 	Fasttext: autoDraw = True
+85.3767 	EXP 	New trial (rep=0, index=18): {'Statement': 'Spatial intervals have an end', 'Correct': 'e'}
+85.3839 	DATA 	Keypress: i
+85.3923 	EXP 	fixcross: autoDraw = False
+85.3923 	EXP 	Fasttext: autoDraw = False
+85.3923 	EXP 	Fasttext: text = 'Spatial intervals have an end'
+85.3923 	EXP 	fixcross: autoDraw = True
+85.8408 	EXP 	fixcross: autoDraw = False
+85.8746 	EXP 	Fasttext: autoDraw = True
+87.5113 	EXP 	New trial (rep=0, index=19): {'Statement': 'Diamonds have a molecular structure', 'Correct': 'e'}
+87.5264 	DATA 	Keypress: e
+87.5413 	EXP 	fixcross: autoDraw = False
+87.5413 	EXP 	Fasttext: autoDraw = False
+87.5413 	EXP 	Fasttext: text = 'Diamonds have a molecular structure'
+87.5413 	EXP 	fixcross: autoDraw = True
+87.9922 	EXP 	fixcross: autoDraw = False
+88.0253 	EXP 	Fasttext: autoDraw = True
+89.4607 	EXP 	New trial (rep=0, index=20): {'Statement': 'Orange is a shape', 'Correct': 'i'}
+89.4689 	DATA 	Keypress: e
+89.4755 	EXP 	fixcross: autoDraw = False
+89.4755 	EXP 	Fasttext: autoDraw = False
+89.4755 	EXP 	Fasttext: text = 'Orange is a shape'
+89.4755 	EXP 	fixcross: autoDraw = True
+89.9249 	EXP 	fixcross: autoDraw = False
+89.9589 	EXP 	Fasttext: autoDraw = True
+91.6612 	EXP 	New trial (rep=0, index=21): {'Statement': 'Time is endless', 'Correct': 'e'}
+91.6717 	DATA 	Keypress: i
+91.6918 	EXP 	fixcross: autoDraw = False
+91.6918 	EXP 	Fasttext: autoDraw = False
+91.6918 	EXP 	Fasttext: text = 'Time is endless'
+91.6918 	EXP 	fixcross: autoDraw = True
+92.1422 	EXP 	fixcross: autoDraw = False
+92.1588 	EXP 	Fasttext: autoDraw = True
+93.2104 	EXP 	New trial (rep=0, index=22): {'Statement': 'Music have a molecular structure', 'Correct': 'i'}
+93.2177 	DATA 	Keypress: e
+93.2249 	EXP 	fixcross: autoDraw = False
+93.2249 	EXP 	Fasttext: autoDraw = False
+93.2249 	EXP 	Fasttext: text = 'Music have a molecular structure'
+93.2249 	EXP 	fixcross: autoDraw = True
+93.6759 	EXP 	fixcross: autoDraw = False
+93.7081 	EXP 	Fasttext: autoDraw = True
+97.2274 	EXP 	New trial (rep=0, index=23): {'Statement': 'Time can go on forever', 'Correct': 'e'}
+97.2344 	DATA 	Keypress: i
+97.2429 	EXP 	fixcross: autoDraw = False
+97.2429 	EXP 	Fasttext: autoDraw = False
+97.2429 	EXP 	Fasttext: text = 'Time can go on forever'
+97.2429 	EXP 	fixcross: autoDraw = True
+97.6917 	EXP 	fixcross: autoDraw = False
+97.7260 	EXP 	Fasttext: autoDraw = True
+98.8637 	DATA 	Keypress: e
+98.8784 	EXP 	New trial (rep=0, index=24): {'Statement': 'Shadows are composed of matter', 'Correct': 'i'}
+98.8928 	EXP 	fixcross: autoDraw = False
+98.8928 	EXP 	Fasttext: autoDraw = False
+98.8928 	EXP 	Fasttext: text = 'Shadows are composed of matter'
+98.8928 	EXP 	fixcross: autoDraw = True
+99.3426 	EXP 	fixcross: autoDraw = False
+99.3759 	EXP 	Fasttext: autoDraw = True
+101.5978 	DATA 	Keypress: i
+101.6132 	EXP 	New trial (rep=0, index=25): {'Statement': 'Five cannot be further divided', 'Correct': 'i'}
+101.6429 	EXP 	fixcross: autoDraw = False
+101.6429 	EXP 	Fasttext: autoDraw = False
+101.6429 	EXP 	Fasttext: text = 'Five cannot be further divided'
+101.6429 	EXP 	fixcross: autoDraw = True
+102.0928 	EXP 	fixcross: autoDraw = False
+102.1255 	EXP 	Fasttext: autoDraw = True
+104.2783 	EXP 	New trial (rep=0, index=26): {'Statement': 'A triangle is a shape', 'Correct': 'e'}
+104.2866 	DATA 	Keypress: i
+104.2927 	EXP 	fixcross: autoDraw = False
+104.2927 	EXP 	Fasttext: autoDraw = False
+104.2927 	EXP 	Fasttext: text = 'A triangle is a shape'
+104.2927 	EXP 	fixcross: autoDraw = True
+104.7428 	EXP 	fixcross: autoDraw = False
+104.7762 	EXP 	Fasttext: autoDraw = True
+105.8944 	EXP 	New trial (rep=0, index=27): {'Statement': 'Stories are composed of matter', 'Correct': 'i'}
+105.9032 	DATA 	Keypress: e
+105.9103 	EXP 	fixcross: autoDraw = False
+105.9103 	EXP 	Fasttext: autoDraw = False
+105.9103 	EXP 	Fasttext: text = 'Stories are composed of matter'
+105.9103 	EXP 	fixcross: autoDraw = True
+106.3603 	EXP 	fixcross: autoDraw = False
+106.3929 	EXP 	Fasttext: autoDraw = True
+107.9287 	EXP 	New trial (rep=0, index=28): {'Statement': 'Numerical intervals are endless', 'Correct': 'i'}
+107.9387 	DATA 	Keypress: i
+107.9605 	EXP 	fixcross: autoDraw = False
+107.9605 	EXP 	Fasttext: autoDraw = False
+107.9605 	EXP 	Fasttext: text = 'Numerical intervals are endless'
+107.9605 	EXP 	fixcross: autoDraw = True
+108.4096 	EXP 	fixcross: autoDraw = False
+108.4261 	EXP 	Fasttext: autoDraw = True
+110.3454 	EXP 	New trial (rep=0, index=29): {'Statement': 'Five can be further divided', 'Correct': 'e'}
+110.3532 	DATA 	Keypress: i
+110.3600 	EXP 	fixcross: autoDraw = False
+110.3600 	EXP 	Fasttext: autoDraw = False
+110.3600 	EXP 	Fasttext: text = 'Five can be further divided'
+110.3600 	EXP 	fixcross: autoDraw = True
+110.8099 	EXP 	fixcross: autoDraw = False
+110.8435 	EXP 	Fasttext: autoDraw = True
+115.2113 	EXP 	New trial (rep=0, index=30): {'Statement': 'Songs can be put in a container', 'Correct': 'i'}
+115.2195 	DATA 	Keypress: e
+115.2262 	EXP 	fixcross: autoDraw = False
+115.2262 	EXP 	Fasttext: autoDraw = False
+115.2262 	EXP 	Fasttext: text = 'Songs can be put in a container'
+115.2262 	EXP 	fixcross: autoDraw = True
+115.6769 	EXP 	fixcross: autoDraw = False
+115.7105 	EXP 	Fasttext: autoDraw = True
+117.0455 	EXP 	New trial (rep=0, index=31): {'Statement': 'A square is a shape', 'Correct': 'e'}
+117.0543 	DATA 	Keypress: i
+117.0607 	EXP 	fixcross: autoDraw = False
+117.0607 	EXP 	Fasttext: autoDraw = False
+117.0607 	EXP 	Fasttext: text = 'A square is a shape'
+117.0607 	EXP 	fixcross: autoDraw = True
+117.5107 	EXP 	fixcross: autoDraw = False
+117.5432 	EXP 	Fasttext: autoDraw = True
+118.6450 	EXP 	New trial (rep=0, index=32): {'Statement': 'Numerical intervals can be further divided', 'Correct': 'e'}
+118.6531 	DATA 	Keypress: e
+118.6601 	EXP 	fixcross: autoDraw = False
+118.6601 	EXP 	Fasttext: autoDraw = False
+118.6601 	EXP 	Fasttext: text = 'Numerical intervals can be further divided'
+118.6601 	EXP 	fixcross: autoDraw = True
+119.1108 	EXP 	fixcross: autoDraw = False
+119.1446 	EXP 	Fasttext: autoDraw = True
+122.1463 	EXP 	New trial (rep=0, index=33): {'Statement': 'Dinosaurs are not extinct', 'Correct': 'i'}
+122.1541 	DATA 	Keypress: e
+122.1613 	EXP 	fixcross: autoDraw = False
+122.1613 	EXP 	Fasttext: autoDraw = False
+122.1613 	EXP 	Fasttext: text = 'Dinosaurs are not extinct'
+122.1613 	EXP 	fixcross: autoDraw = True
+122.6280 	EXP 	fixcross: autoDraw = False
+122.6442 	EXP 	Fasttext: autoDraw = True
+123.7461 	EXP 	New trial (rep=0, index=34): {'Statement': 'This sentence is written in English', 'Correct': 'e'}
+123.7544 	DATA 	Keypress: i
+123.7613 	EXP 	fixcross: autoDraw = False
+123.7613 	EXP 	Fasttext: autoDraw = False
+123.7613 	EXP 	Fasttext: text = 'This sentence is written in English'
+123.7613 	EXP 	fixcross: autoDraw = True
+124.2282 	EXP 	fixcross: autoDraw = False
+124.2444 	EXP 	Fasttext: autoDraw = True
+125.1304 	DATA 	Keypress: e
+125.1466 	EXP 	New trial (rep=0, index=35): {'Statement': 'Space can be further divided', 'Correct': 'e'}
+125.1605 	EXP 	fixcross: autoDraw = False
+125.1605 	EXP 	Fasttext: autoDraw = False
+125.1605 	EXP 	Fasttext: text = 'Space can be further divided'
+125.1605 	EXP 	fixcross: autoDraw = True
+125.6114 	EXP 	fixcross: autoDraw = False
+125.6445 	EXP 	Fasttext: autoDraw = True
+129.8636 	EXP 	New trial (rep=0, index=36): {'Statement': 'Numerical intervals are infinite', 'Correct': 'i'}
+129.8709 	DATA 	Keypress: e
+129.8783 	EXP 	fixcross: autoDraw = False
+129.8783 	EXP 	Fasttext: autoDraw = False
+129.8783 	EXP 	Fasttext: text = 'Numerical intervals are infinite'
+129.8783 	EXP 	fixcross: autoDraw = True
+130.3299 	EXP 	fixcross: autoDraw = False
+130.3618 	EXP 	Fasttext: autoDraw = True
+131.3639 	EXP 	New trial (rep=0, index=37): {'Statement': 'Number is endless', 'Correct': 'e'}
+131.3795 	DATA 	Keypress: e
+131.3948 	EXP 	fixcross: autoDraw = False
+131.3948 	EXP 	Fasttext: autoDraw = False
+131.3948 	EXP 	Fasttext: text = 'Number is endless'
+131.3948 	EXP 	fixcross: autoDraw = True
+131.8441 	EXP 	fixcross: autoDraw = False
+131.8781 	EXP 	Fasttext: autoDraw = True
+132.8959 	EXP 	New trial (rep=0, index=38): {'Statement': 'There are fifty states in the United States', 'Correct': 'e'}
+132.9062 	DATA 	Keypress: e
+132.9128 	EXP 	fixcross: autoDraw = False
+132.9128 	EXP 	Fasttext: autoDraw = False
+132.9128 	EXP 	Fasttext: text = 'There are fifty states in the United States'
+132.9128 	EXP 	fixcross: autoDraw = True
+133.3621 	EXP 	fixcross: autoDraw = False
+133.3942 	EXP 	Fasttext: autoDraw = True
+134.3139 	EXP 	New trial (rep=0, index=39): {'Statement': 'Color can be put in a container', 'Correct': 'i'}
+134.3236 	DATA 	Keypress: e
+134.3452 	EXP 	fixcross: autoDraw = False
+134.3452 	EXP 	Fasttext: autoDraw = False
+134.3452 	EXP 	Fasttext: text = 'Color can be put in a container'
+134.3452 	EXP 	fixcross: autoDraw = True
+134.7956 	EXP 	fixcross: autoDraw = False
+134.8123 	EXP 	Fasttext: autoDraw = True
+135.9629 	EXP 	New trial (rep=0, index=40): {'Statement': 'Humans cannot breathe water', 'Correct': 'e'}
+135.9702 	DATA 	Keypress: i
+135.9777 	EXP 	fixcross: autoDraw = False
+135.9777 	EXP 	Fasttext: autoDraw = False
+135.9777 	EXP 	Fasttext: text = 'Humans cannot breathe water'
+135.9777 	EXP 	fixcross: autoDraw = True
+136.4284 	EXP 	fixcross: autoDraw = False
+136.4617 	EXP 	Fasttext: autoDraw = True
+137.9306 	EXP 	New trial (rep=0, index=41): {'Statement': 'The Earth is a star', 'Correct': 'i'}
+137.9392 	DATA 	Keypress: e
+137.9457 	EXP 	fixcross: autoDraw = False
+137.9457 	EXP 	Fasttext: autoDraw = False
+137.9457 	EXP 	Fasttext: text = 'The Earth is a star'
+137.9457 	EXP 	fixcross: autoDraw = True
+138.3958 	EXP 	fixcross: autoDraw = False
+138.4283 	EXP 	Fasttext: autoDraw = True
+139.7811 	EXP 	New trial (rep=0, index=42): {'Statement': 'The president of the United States is Oprah', 'Correct': 'i'}
+139.7895 	DATA 	Keypress: i
+139.7959 	EXP 	fixcross: autoDraw = False
+139.7959 	EXP 	Fasttext: autoDraw = False
+139.7959 	EXP 	Fasttext: text = 'The president of the United States is Oprah'
+139.7959 	EXP 	fixcross: autoDraw = True
+140.2455 	EXP 	fixcross: autoDraw = False
+140.2789 	EXP 	Fasttext: autoDraw = True
+141.6973 	EXP 	New trial (rep=0, index=43): {'Statement': 'A truck is an animal', 'Correct': 'i'}
+141.7043 	DATA 	Keypress: e
+141.7121 	EXP 	fixcross: autoDraw = False
+141.7121 	EXP 	Fasttext: autoDraw = False
+141.7121 	EXP 	Fasttext: text = 'A truck is an animal'
+141.7121 	EXP 	fixcross: autoDraw = True
+142.1622 	EXP 	fixcross: autoDraw = False
+142.1955 	EXP 	Fasttext: autoDraw = True
+145.4815 	EXP 	New trial (rep=0, index=44): {'Statement': 'Numerical intervals can go on forever', 'Correct': 'i'}
+145.4890 	DATA 	Keypress: i
+145.4959 	EXP 	fixcross: autoDraw = False
+145.4959 	EXP 	Fasttext: autoDraw = False
+145.4959 	EXP 	Fasttext: text = 'Numerical intervals can go on forever'
+145.4959 	EXP 	fixcross: autoDraw = True
+145.9462 	EXP 	fixcross: autoDraw = False
+145.9796 	EXP 	Fasttext: autoDraw = True
+149.5644 	EXP 	New trial (rep=0, index=45): {'Statement': 'Turtles need nutrients', 'Correct': 'e'}
+149.5718 	DATA 	Keypress: i
+149.5788 	EXP 	fixcross: autoDraw = False
+149.5788 	EXP 	Fasttext: autoDraw = False
+149.5788 	EXP 	Fasttext: text = 'Turtles need nutrients'
+149.5788 	EXP 	fixcross: autoDraw = True
+150.0297 	EXP 	fixcross: autoDraw = False
+150.0628 	EXP 	Fasttext: autoDraw = True
+153.8986 	EXP 	New trial (rep=0, index=46): {'Statement': 'The United States is a country', 'Correct': 'e'}
+153.9060 	DATA 	Keypress: e
+153.9130 	EXP 	fixcross: autoDraw = False
+153.9130 	EXP 	Fasttext: autoDraw = False
+153.9130 	EXP 	Fasttext: text = 'The United States is a country'
+153.9130 	EXP 	fixcross: autoDraw = True
+154.3631 	EXP 	fixcross: autoDraw = False
+154.3970 	EXP 	Fasttext: autoDraw = True
+155.4658 	EXP 	New trial (rep=0, index=47): {'Statement': 'Echoes is composed of matter', 'Correct': 'i'}
+155.4724 	DATA 	Keypress: e
+155.4804 	EXP 	fixcross: autoDraw = False
+155.4804 	EXP 	Fasttext: autoDraw = False
+155.4804 	EXP 	Fasttext: text = 'Echoes is composed of matter'
+155.4804 	EXP 	fixcross: autoDraw = True
+155.9303 	EXP 	fixcross: autoDraw = False
+155.9635 	EXP 	Fasttext: autoDraw = True
+158.5984 	EXP 	New trial (rep=0, index=48): {'Statement': 'Magenta is a color', 'Correct': 'e'}
+158.6059 	DATA 	Keypress: i
+158.6136 	EXP 	fixcross: autoDraw = False
+158.6136 	EXP 	Fasttext: autoDraw = False
+158.6136 	EXP 	Fasttext: text = 'Magenta is a color'
+158.6136 	EXP 	fixcross: autoDraw = True
+159.0634 	EXP 	fixcross: autoDraw = False
+159.0963 	EXP 	Fasttext: autoDraw = True
+160.0001 	DATA 	Keypress: e
+160.0152 	EXP 	New trial (rep=0, index=49): {'Statement': 'Number is finite', 'Correct': 'i'}
+160.0292 	EXP 	fixcross: autoDraw = False
+160.0292 	EXP 	Fasttext: autoDraw = False
+160.0292 	EXP 	Fasttext: text = 'Number is finite'
+160.0292 	EXP 	fixcross: autoDraw = True
+160.4802 	EXP 	fixcross: autoDraw = False
+160.5144 	EXP 	Fasttext: autoDraw = True
+161.4978 	EXP 	New trial (rep=0, index=50): {'Statement': 'Time cannot be further divided', 'Correct': 'i'}
+161.5051 	DATA 	Keypress: i
+161.5141 	EXP 	fixcross: autoDraw = False
+161.5141 	EXP 	Fasttext: autoDraw = False
+161.5141 	EXP 	Fasttext: text = 'Time cannot be further divided'
+161.5141 	EXP 	fixcross: autoDraw = True
+161.9634 	EXP 	fixcross: autoDraw = False
+161.9969 	EXP 	Fasttext: autoDraw = True
+163.8653 	EXP 	New trial (rep=0, index=51): {'Statement': 'A minute is finite', 'Correct': 'e'}
+163.8721 	DATA 	Keypress: i
+163.8803 	EXP 	fixcross: autoDraw = False
+163.8803 	EXP 	Fasttext: autoDraw = False
+163.8803 	EXP 	Fasttext: text = 'A minute is finite'
+163.8803 	EXP 	fixcross: autoDraw = True
+164.3301 	EXP 	fixcross: autoDraw = False
+164.3632 	EXP 	Fasttext: autoDraw = True
+166.4832 	EXP 	New trial (rep=0, index=52): {'Statement': 'Yellow is a color', 'Correct': 'e'}
+166.4958 	DATA 	Keypress: i
+166.5146 	EXP 	fixcross: autoDraw = False
+166.5146 	EXP 	Fasttext: autoDraw = False
+166.5146 	EXP 	Fasttext: text = 'Yellow is a color'
+166.5146 	EXP 	fixcross: autoDraw = True
+166.9646 	EXP 	fixcross: autoDraw = False
+166.9972 	EXP 	Fasttext: autoDraw = True
+167.8999 	EXP 	New trial (rep=0, index=53): {'Statement': 'Magenta is a shape', 'Correct': 'i'}
+167.9067 	DATA 	Keypress: e
+167.9134 	EXP 	fixcross: autoDraw = False
+167.9134 	EXP 	Fasttext: autoDraw = False
+167.9134 	EXP 	Fasttext: text = 'Magenta is a shape'
+167.9134 	EXP 	fixcross: autoDraw = True
+168.3640 	EXP 	fixcross: autoDraw = False
+168.3976 	EXP 	Fasttext: autoDraw = True
+170.7015 	DATA 	Keypress: i
+170.7157 	EXP 	New trial (rep=0, index=54): {'Statement': 'An inch is endless', 'Correct': 'i'}
+170.7302 	EXP 	fixcross: autoDraw = False
+170.7302 	EXP 	Fasttext: autoDraw = False
+170.7302 	EXP 	Fasttext: text = 'An inch is endless'
+170.7302 	EXP 	fixcross: autoDraw = True
+171.1800 	EXP 	fixcross: autoDraw = False
+171.2135 	EXP 	Fasttext: autoDraw = True
+172.5995 	EXP 	New trial (rep=0, index=55): {'Statement': 'Five is infinite', 'Correct': 'i'}
+172.6065 	DATA 	Keypress: i
+172.6142 	EXP 	fixcross: autoDraw = False
+172.6142 	EXP 	Fasttext: autoDraw = False
+172.6142 	EXP 	Fasttext: text = 'Five is infinite'
+172.6142 	EXP 	fixcross: autoDraw = True
+173.0646 	EXP 	fixcross: autoDraw = False
+173.0979 	EXP 	Fasttext: autoDraw = True
+174.3663 	EXP 	New trial (rep=0, index=56): {'Statement': 'Humans cannot eat food', 'Correct': 'i'}
+174.3741 	DATA 	Keypress: i
+174.3806 	EXP 	fixcross: autoDraw = False
+174.3806 	EXP 	Fasttext: autoDraw = False
+174.3806 	EXP 	Fasttext: text = 'Humans cannot eat food'
+174.3806 	EXP 	fixcross: autoDraw = True
+174.8316 	EXP 	fixcross: autoDraw = False
+174.8646 	EXP 	Fasttext: autoDraw = True
+176.0664 	EXP 	New trial (rep=0, index=57): {'Statement': 'Tables reproduce', 'Correct': 'i'}
+176.0733 	DATA 	Keypress: i
+176.0812 	EXP 	fixcross: autoDraw = False
+176.0812 	EXP 	Fasttext: autoDraw = False
+176.0812 	EXP 	Fasttext: text = 'Tables reproduce'
+176.0812 	EXP 	fixcross: autoDraw = True
+176.5313 	EXP 	fixcross: autoDraw = False
+176.5646 	EXP 	Fasttext: autoDraw = True
+177.6493 	EXP 	New trial (rep=0, index=58): {'Statement': 'A clock is used to tell time', 'Correct': 'e'}
+177.6568 	DATA 	Keypress: i
+177.6646 	EXP 	fixcross: autoDraw = False
+177.6646 	EXP 	Fasttext: autoDraw = False
+177.6646 	EXP 	Fasttext: text = 'A clock is used to tell time'
+177.6646 	EXP 	fixcross: autoDraw = True
+178.1147 	EXP 	fixcross: autoDraw = False
+178.1487 	EXP 	Fasttext: autoDraw = True
+179.2166 	EXP 	New trial (rep=0, index=59): {'Statement': 'Five cannot go on forever', 'Correct': 'e'}
+179.2233 	DATA 	Keypress: e
+179.2308 	EXP 	fixcross: autoDraw = False
+179.2308 	EXP 	Fasttext: autoDraw = False
+179.2308 	EXP 	Fasttext: text = 'Five cannot go on forever'
+179.2308 	EXP 	fixcross: autoDraw = True
+179.6816 	EXP 	fixcross: autoDraw = False
+179.7150 	EXP 	Fasttext: autoDraw = True
+180.9002 	EXP 	New trial (rep=0, index=60): {'Statement': 'The United States has a president', 'Correct': 'e'}
+180.9080 	DATA 	Keypress: i
+180.9147 	EXP 	fixcross: autoDraw = False
+180.9147 	EXP 	Fasttext: autoDraw = False
+180.9147 	EXP 	Fasttext: text = 'The United States has a president'
+180.9147 	EXP 	fixcross: autoDraw = True
+181.3652 	EXP 	fixcross: autoDraw = False
+181.3977 	EXP 	Fasttext: autoDraw = True
+183.6497 	EXP 	New trial (rep=0, index=61): {'Statement': 'An inch can be further divided', 'Correct': 'e'}
+183.6569 	DATA 	Keypress: e
+183.6650 	EXP 	fixcross: autoDraw = False
+183.6650 	EXP 	Fasttext: autoDraw = False
+183.6650 	EXP 	Fasttext: text = 'An inch can be further divided'
+183.6650 	EXP 	fixcross: autoDraw = True
+184.1153 	EXP 	fixcross: autoDraw = False
+184.1489 	EXP 	Fasttext: autoDraw = True
+186.0842 	EXP 	New trial (rep=0, index=62): {'Statement': 'A minute is endless', 'Correct': 'i'}
+186.0906 	DATA 	Keypress: e
+186.0987 	EXP 	fixcross: autoDraw = False
+186.0987 	EXP 	Fasttext: autoDraw = False
+186.0987 	EXP 	Fasttext: text = 'A minute is endless'
+186.0987 	EXP 	fixcross: autoDraw = True
+186.5489 	EXP 	fixcross: autoDraw = False
+186.5819 	EXP 	Fasttext: autoDraw = True
+188.4333 	EXP 	New trial (rep=0, index=63): {'Statement': 'Concrete is composed of matter', 'Correct': 'e'}
+188.4402 	DATA 	Keypress: i
+188.4483 	EXP 	fixcross: autoDraw = False
+188.4483 	EXP 	Fasttext: autoDraw = False
+188.4483 	EXP 	Fasttext: text = 'Concrete is composed of matter'
+188.4483 	EXP 	fixcross: autoDraw = True
+188.8985 	EXP 	fixcross: autoDraw = False
+188.9318 	EXP 	Fasttext: autoDraw = True
+191.5518 	EXP 	New trial (rep=0, index=64): {'Statement': 'Words have a molecular structure', 'Correct': 'i'}
+191.5599 	DATA 	Keypress: e
+191.5660 	EXP 	fixcross: autoDraw = False
+191.5660 	EXP 	Fasttext: autoDraw = False
+191.5660 	EXP 	Fasttext: text = 'Words have a molecular structure'
+191.5660 	EXP 	fixcross: autoDraw = True
+192.0153 	EXP 	fixcross: autoDraw = False
+192.0488 	EXP 	Fasttext: autoDraw = True
+195.2506 	EXP 	New trial (rep=0, index=65): {'Statement': 'A minute can go on forever', 'Correct': 'i'}
+195.2575 	DATA 	Keypress: i
+195.2652 	EXP 	fixcross: autoDraw = False
+195.2652 	EXP 	Fasttext: autoDraw = False
+195.2652 	EXP 	Fasttext: text = 'A minute can go on forever'
+195.2652 	EXP 	fixcross: autoDraw = True
+195.7162 	EXP 	fixcross: autoDraw = False
+195.7501 	EXP 	Fasttext: autoDraw = True
+200.1183 	EXP 	New trial (rep=0, index=66): {'Statement': 'Dumbells are composed of matter', 'Correct': 'e'}
+200.1266 	DATA 	Keypress: i
+200.1332 	EXP 	fixcross: autoDraw = False
+200.1332 	EXP 	Fasttext: autoDraw = False
+200.1332 	EXP 	Fasttext: text = 'Dumbells are composed of matter'
+200.1332 	EXP 	fixcross: autoDraw = True
+200.5830 	EXP 	fixcross: autoDraw = False
+200.6171 	EXP 	Fasttext: autoDraw = True
+201.7179 	EXP 	New trial (rep=0, index=67): {'Statement': 'Intervals of time are infinite', 'Correct': 'i'}
+201.7257 	DATA 	Keypress: e
+201.7327 	EXP 	fixcross: autoDraw = False
+201.7327 	EXP 	Fasttext: autoDraw = False
+201.7327 	EXP 	Fasttext: text = 'Intervals of time are infinite'
+201.7327 	EXP 	fixcross: autoDraw = True
+202.1830 	EXP 	fixcross: autoDraw = False
+202.2169 	EXP 	Fasttext: autoDraw = True
+203.5515 	EXP 	New trial (rep=0, index=68): {'Statement': 'Forks are alive', 'Correct': 'i'}
+203.5581 	DATA 	Keypress: i
+203.5664 	EXP 	fixcross: autoDraw = False
+203.5664 	EXP 	Fasttext: autoDraw = False
+203.5664 	EXP 	Fasttext: text = 'Forks are alive'
+203.5664 	EXP 	fixcross: autoDraw = True
+204.0159 	EXP 	fixcross: autoDraw = False
+204.0492 	EXP 	Fasttext: autoDraw = True
+205.1012 	EXP 	New trial (rep=0, index=69): {'Statement': 'A square is a color', 'Correct': 'i'}
+205.1083 	DATA 	Keypress: i
+205.1160 	EXP 	fixcross: autoDraw = False
+205.1160 	EXP 	Fasttext: autoDraw = False
+205.1160 	EXP 	Fasttext: text = 'A square is a color'
+205.1160 	EXP 	fixcross: autoDraw = True
+205.5668 	EXP 	fixcross: autoDraw = False
+205.5989 	EXP 	Fasttext: autoDraw = True
+206.7345 	EXP 	New trial (rep=0, index=70): {'Statement': 'Oaks reproduce', 'Correct': 'e'}
+206.7416 	DATA 	Keypress: i
+206.7492 	EXP 	fixcross: autoDraw = False
+206.7492 	EXP 	Fasttext: autoDraw = False
+206.7492 	EXP 	Fasttext: text = 'Oaks reproduce'
+206.7492 	EXP 	fixcross: autoDraw = True
+207.1992 	EXP 	fixcross: autoDraw = False
+207.2338 	EXP 	Fasttext: autoDraw = True
+210.6688 	EXP 	New trial (rep=0, index=71): {'Statement': 'Spatial intervals can be further divided', 'Correct': 'e'}
+210.6764 	DATA 	Keypress: e
+210.6837 	EXP 	fixcross: autoDraw = False
+210.6837 	EXP 	Fasttext: autoDraw = False
+210.6837 	EXP 	Fasttext: text = 'Spatial intervals can be further divided'
+210.6837 	EXP 	fixcross: autoDraw = True
+211.1344 	EXP 	fixcross: autoDraw = False
+211.1670 	EXP 	Fasttext: autoDraw = True
+212.3527 	EXP 	New trial (rep=0, index=72): {'Statement': 'Time is infinite', 'Correct': 'e'}
+212.3597 	DATA 	Keypress: i
+212.3666 	EXP 	fixcross: autoDraw = False
+212.3666 	EXP 	Fasttext: autoDraw = False
+212.3666 	EXP 	Fasttext: text = 'Time is infinite'
+212.3666 	EXP 	fixcross: autoDraw = True
+212.8168 	EXP 	fixcross: autoDraw = False
+212.8516 	EXP 	Fasttext: autoDraw = True
+213.9358 	EXP 	New trial (rep=0, index=73): {'Statement': 'Bricks can be put in a container', 'Correct': 'e'}
+213.9447 	DATA 	Keypress: e
+213.9509 	EXP 	fixcross: autoDraw = False
+213.9509 	EXP 	Fasttext: autoDraw = False
+213.9509 	EXP 	Fasttext: text = 'Bricks can be put in a container'
+213.9509 	EXP 	fixcross: autoDraw = True
+214.3999 	EXP 	fixcross: autoDraw = False
+214.4335 	EXP 	Fasttext: autoDraw = True
+216.9194 	EXP 	New trial (rep=0, index=74): {'Statement': 'Pollen has a molecular structure', 'Correct': 'e'}
+216.9269 	DATA 	Keypress: e
+216.9337 	EXP 	fixcross: autoDraw = False
+216.9337 	EXP 	Fasttext: autoDraw = False
+216.9337 	EXP 	Fasttext: text = 'Pollen has a molecular structure'
+216.9337 	EXP 	fixcross: autoDraw = True
+217.3842 	EXP 	fixcross: autoDraw = False
+217.4176 	EXP 	Fasttext: autoDraw = True
+220.1869 	EXP 	New trial (rep=0, index=75): {'Statement': 'A circle is a flavor', 'Correct': 'i'}
+220.1947 	DATA 	Keypress: e
+220.2010 	EXP 	fixcross: autoDraw = False
+220.2010 	EXP 	Fasttext: autoDraw = False
+220.2010 	EXP 	Fasttext: text = 'A circle is a flavor'
+220.2010 	EXP 	fixcross: autoDraw = True
+220.6519 	EXP 	fixcross: autoDraw = False
+220.6841 	EXP 	Fasttext: autoDraw = True
+221.8027 	EXP 	New trial (rep=0, index=76): {'Statement': 'Humans can breathe water', 'Correct': 'i'}
+221.8095 	DATA 	Keypress: i
+221.8170 	EXP 	fixcross: autoDraw = False
+221.8170 	EXP 	Fasttext: autoDraw = False
+221.8170 	EXP 	Fasttext: text = 'Humans can breathe water'
+221.8170 	EXP 	fixcross: autoDraw = True
+222.2676 	EXP 	fixcross: autoDraw = False
+222.3018 	EXP 	Fasttext: autoDraw = True
+224.2686 	EXP 	New trial (rep=0, index=77): {'Statement': 'Stones reproduce', 'Correct': 'i'}
+224.2755 	DATA 	Keypress: i
+224.2841 	EXP 	fixcross: autoDraw = False
+224.2841 	EXP 	Fasttext: autoDraw = False
+224.2841 	EXP 	Fasttext: text = 'Stones reproduce'
+224.2841 	EXP 	fixcross: autoDraw = True
+224.7349 	EXP 	fixcross: autoDraw = False
+224.7687 	EXP 	Fasttext: autoDraw = True
+227.9888 	DATA 	Keypress: i
+228.0034 	EXP 	New trial (rep=0, index=78): {'Statement': 'Tigers reproduce', 'Correct': 'e'}
+228.0181 	EXP 	fixcross: autoDraw = False
+228.0181 	EXP 	Fasttext: autoDraw = False
+228.0181 	EXP 	Fasttext: text = 'Tigers reproduce'
+228.0181 	EXP 	fixcross: autoDraw = True
+228.4675 	EXP 	fixcross: autoDraw = False
+228.5010 	EXP 	Fasttext: autoDraw = True
+229.3878 	EXP 	New trial (rep=0, index=79): {'Statement': 'Number can be further divided', 'Correct': 'e'}
+229.3954 	DATA 	Keypress: e
+229.4020 	EXP 	fixcross: autoDraw = False
+229.4020 	EXP 	Fasttext: autoDraw = False
+229.4020 	EXP 	Fasttext: text = 'Number can be further divided'
+229.4020 	EXP 	fixcross: autoDraw = True
+229.8517 	EXP 	fixcross: autoDraw = False
+229.8845 	EXP 	Fasttext: autoDraw = True
+232.6372 	EXP 	New trial (rep=0, index=80): {'Statement': 'A truck is a vehicle', 'Correct': 'e'}
+232.6443 	DATA 	Keypress: e
+232.6522 	EXP 	fixcross: autoDraw = False
+232.6522 	EXP 	Fasttext: autoDraw = False
+232.6522 	EXP 	Fasttext: text = 'A truck is a vehicle'
+232.6522 	EXP 	fixcross: autoDraw = True
+233.1023 	EXP 	fixcross: autoDraw = False
+233.1350 	EXP 	Fasttext: autoDraw = True
+235.7371 	EXP 	New trial (rep=0, index=81): {'Statement': 'Space has an end', 'Correct': 'i'}
+235.7453 	DATA 	Keypress: e
+235.7515 	EXP 	fixcross: autoDraw = False
+235.7515 	EXP 	Fasttext: autoDraw = False
+235.7515 	EXP 	Fasttext: text = 'Space has an end'
+235.7515 	EXP 	fixcross: autoDraw = True
+236.2013 	EXP 	fixcross: autoDraw = False
+236.2346 	EXP 	Fasttext: autoDraw = True
+237.7712 	EXP 	New trial (rep=0, index=82): {'Statement': 'An inch can go on forever', 'Correct': 'i'}
+237.7780 	DATA 	Keypress: i
+237.7856 	EXP 	fixcross: autoDraw = False
+237.7856 	EXP 	Fasttext: autoDraw = False
+237.7856 	EXP 	Fasttext: text = 'An inch can go on forever'
+237.7856 	EXP 	fixcross: autoDraw = True
+238.2355 	EXP 	fixcross: autoDraw = False
+238.2684 	EXP 	Fasttext: autoDraw = True
+239.7707 	EXP 	New trial (rep=0, index=83): {'Statement': 'Dinosaurs are extinct', 'Correct': 'e'}
+239.7774 	DATA 	Keypress: i
+239.7855 	EXP 	fixcross: autoDraw = False
+239.7855 	EXP 	Fasttext: autoDraw = False
+239.7855 	EXP 	Fasttext: text = 'Dinosaurs are extinct'
+239.7855 	EXP 	fixcross: autoDraw = True
+240.2356 	EXP 	fixcross: autoDraw = False
+240.2692 	EXP 	Fasttext: autoDraw = True
+241.7046 	EXP 	New trial (rep=0, index=84): {'Statement': 'A minute has an end', 'Correct': 'e'}
+241.7115 	DATA 	Keypress: i
+241.7192 	EXP 	fixcross: autoDraw = False
+241.7192 	EXP 	Fasttext: autoDraw = False
+241.7192 	EXP 	Fasttext: text = 'A minute has an end'
+241.7192 	EXP 	fixcross: autoDraw = True
+242.1696 	EXP 	fixcross: autoDraw = False
+242.2015 	EXP 	Fasttext: autoDraw = True
+244.0714 	EXP 	New trial (rep=0, index=85): {'Statement': 'Mississippi is a country', 'Correct': 'i'}
+244.0784 	DATA 	Keypress: e
+244.0853 	EXP 	fixcross: autoDraw = False
+244.0853 	EXP 	Fasttext: autoDraw = False
+244.0853 	EXP 	Fasttext: text = 'Mississippi is a country'
+244.0853 	EXP 	fixcross: autoDraw = True
+244.5365 	EXP 	fixcross: autoDraw = False
+244.5696 	EXP 	Fasttext: autoDraw = True
+245.7214 	EXP 	New trial (rep=0, index=86): {'Statement': 'Intervals of time cannot be further divided', 'Correct': 'i'}
+245.7291 	DATA 	Keypress: i
+245.7360 	EXP 	fixcross: autoDraw = False
+245.7360 	EXP 	Fasttext: autoDraw = False
+245.7360 	EXP 	Fasttext: text = 'Intervals of time cannot be further divided'
+245.7360 	EXP 	fixcross: autoDraw = True
+246.1858 	EXP 	fixcross: autoDraw = False
+246.2186 	EXP 	Fasttext: autoDraw = True
+251.2191 	EXP 	Fasttext: autoDraw = False
+251.7042 	EXP 	New trial (rep=0, index=87): {'Statement': 'Foam are composed of matter', 'Correct': 'e'}
+251.7205 	EXP 	fixcross: autoDraw = False
+251.7205 	EXP 	Fasttext: autoDraw = False
+251.7205 	EXP 	Fasttext: text = 'Foam are composed of matter'
+251.7205 	EXP 	fixcross: autoDraw = True
+252.1697 	EXP 	fixcross: autoDraw = False
+252.2033 	EXP 	Fasttext: autoDraw = True
+257.2031 	EXP 	Fasttext: autoDraw = False
+257.6886 	EXP 	New trial (rep=0, index=88): {'Statement': 'A motorcycle is a person', 'Correct': 'i'}
+257.7034 	EXP 	fixcross: autoDraw = False
+257.7034 	EXP 	Fasttext: autoDraw = False
+257.7034 	EXP 	Fasttext: text = 'A motorcycle is a person'
+257.7034 	EXP 	fixcross: autoDraw = True
+258.1527 	EXP 	fixcross: autoDraw = False
+258.1860 	EXP 	Fasttext: autoDraw = True
+259.4053 	EXP 	New trial (rep=0, index=89): {'Statement': 'Grass needs nutrients', 'Correct': 'e'}
+259.4149 	DATA 	Keypress: i
+259.4213 	EXP 	fixcross: autoDraw = False
+259.4213 	EXP 	Fasttext: autoDraw = False
+259.4213 	EXP 	Fasttext: text = 'Grass needs nutrients'
+259.4213 	EXP 	fixcross: autoDraw = True
+259.8873 	EXP 	fixcross: autoDraw = False
+259.9035 	EXP 	Fasttext: autoDraw = True
+264.9035 	EXP 	Fasttext: autoDraw = False
+265.3888 	EXP 	New trial (rep=0, index=90): {'Statement': 'The Earth is a planet', 'Correct': 'e'}
+265.4038 	EXP 	fixcross: autoDraw = False
+265.4038 	EXP 	Fasttext: autoDraw = False
+265.4038 	EXP 	Fasttext: text = 'The Earth is a planet'
+265.4038 	EXP 	fixcross: autoDraw = True
+265.8537 	EXP 	fixcross: autoDraw = False
+265.8874 	EXP 	Fasttext: autoDraw = True
+269.3899 	EXP 	New trial (rep=0, index=91): {'Statement': 'Five is finite', 'Correct': 'e'}
+269.4005 	DATA 	Keypress: e
+269.4206 	EXP 	fixcross: autoDraw = False
+269.4206 	EXP 	Fasttext: autoDraw = False
+269.4206 	EXP 	Fasttext: text = 'Five is finite'
+269.4206 	EXP 	fixcross: autoDraw = True
+269.8702 	EXP 	fixcross: autoDraw = False
+269.8870 	EXP 	Fasttext: autoDraw = True
+274.8873 	EXP 	Fasttext: autoDraw = False
+275.3742 	EXP 	New trial (rep=0, index=92): {'Statement': 'Five is endless', 'Correct': 'i'}
+275.3885 	EXP 	fixcross: autoDraw = False
+275.3885 	EXP 	Fasttext: autoDraw = False
+275.3885 	EXP 	Fasttext: text = 'Five is endless'
+275.3885 	EXP 	fixcross: autoDraw = True
+275.8544 	EXP 	fixcross: autoDraw = False
+275.8709 	EXP 	Fasttext: autoDraw = True
+277.3904 	EXP 	New trial (rep=0, index=93): {'Statement': 'Intervals of time can go on forever', 'Correct': 'i'}
+277.3981 	DATA 	Keypress: i
+277.4047 	EXP 	fixcross: autoDraw = False
+277.4047 	EXP 	Fasttext: autoDraw = False
+277.4047 	EXP 	Fasttext: text = 'Intervals of time can go on forever'
+277.4047 	EXP 	fixcross: autoDraw = True
+277.8552 	EXP 	fixcross: autoDraw = False
+277.8893 	EXP 	Fasttext: autoDraw = True
+282.8893 	EXP 	Fasttext: autoDraw = False
+283.3739 	EXP 	New trial (rep=0, index=94): {'Statement': 'Intervals of time have an end', 'Correct': 'e'}
+283.3883 	EXP 	fixcross: autoDraw = False
+283.3883 	EXP 	Fasttext: autoDraw = False
+283.3883 	EXP 	Fasttext: text = 'Intervals of time have an end'
+283.3883 	EXP 	fixcross: autoDraw = True
+283.8379 	EXP 	fixcross: autoDraw = False
+283.8709 	EXP 	Fasttext: autoDraw = True
+285.8244 	EXP 	New trial (rep=0, index=95): {'Statement': 'Humans can eat food', 'Correct': 'e'}
+285.8375 	DATA 	Keypress: e
+285.8553 	EXP 	fixcross: autoDraw = False
+285.8553 	EXP 	Fasttext: autoDraw = False
+285.8553 	EXP 	Fasttext: text = 'Humans can eat food'
+285.8553 	EXP 	fixcross: autoDraw = True
+286.3048 	EXP 	fixcross: autoDraw = False
+286.3384 	EXP 	Fasttext: autoDraw = True
+287.3079 	EXP 	New trial (rep=0, index=96): {'Statement': 'A circle is a shape', 'Correct': 'e'}
+287.3196 	DATA 	Keypress: e
+287.3390 	EXP 	fixcross: autoDraw = False
+287.3390 	EXP 	Fasttext: autoDraw = False
+287.3390 	EXP 	Fasttext: text = 'A circle is a shape'
+287.3390 	EXP 	fixcross: autoDraw = True
+287.7885 	EXP 	fixcross: autoDraw = False
+287.8226 	EXP 	Fasttext: autoDraw = True
+289.2408 	EXP 	New trial (rep=0, index=97): {'Statement': 'An inch cannot go on forever', 'Correct': 'e'}
+289.2537 	DATA 	Keypress: e
+289.2714 	EXP 	fixcross: autoDraw = False
+289.2714 	EXP 	Fasttext: autoDraw = False
+289.2714 	EXP 	Fasttext: text = 'An inch cannot go on forever'
+289.2714 	EXP 	fixcross: autoDraw = True
+289.7226 	EXP 	fixcross: autoDraw = False
+289.7556 	EXP 	Fasttext: autoDraw = True
+291.5405 	EXP 	New trial (rep=0, index=98): {'Statement': 'Robots need nutrients', 'Correct': 'i'}
+291.5499 	DATA 	Keypress: i
+291.5571 	EXP 	fixcross: autoDraw = False
+291.5571 	EXP 	Fasttext: autoDraw = False
+291.5571 	EXP 	Fasttext: text = 'Robots need nutrients'
+291.5571 	EXP 	fixcross: autoDraw = True
+292.0218 	EXP 	fixcross: autoDraw = False
+292.0388 	EXP 	Fasttext: autoDraw = True
+294.0576 	EXP 	New trial (rep=0, index=99): {'Statement': 'A minute can be further divided', 'Correct': 'e'}
+294.0670 	DATA 	Keypress: i
+294.0729 	EXP 	fixcross: autoDraw = False
+294.0729 	EXP 	Fasttext: autoDraw = False
+294.0729 	EXP 	Fasttext: text = 'A minute can be further divided'
+294.0729 	EXP 	fixcross: autoDraw = True
+294.5219 	EXP 	fixcross: autoDraw = False
+294.5549 	EXP 	Fasttext: autoDraw = True
+296.0752 	EXP 	New trial (rep=0, index=100): {'Statement': 'Numerical intervals cannot be further divided', 'Correct': 'i'}
+296.0859 	DATA 	Keypress: e
+296.1055 	EXP 	fixcross: autoDraw = False
+296.1055 	EXP 	Fasttext: autoDraw = False
+296.1055 	EXP 	Fasttext: text = 'Numerical intervals cannot be further divided'
+296.1055 	EXP 	fixcross: autoDraw = True
+296.5566 	EXP 	fixcross: autoDraw = False
+296.5732 	EXP 	Fasttext: autoDraw = True
+301.2239 	EXP 	New trial (rep=0, index=101): {'Statement': 'Bubbles can be put in a container', 'Correct': 'e'}
+301.2325 	DATA 	Keypress: i
+301.2403 	EXP 	fixcross: autoDraw = False
+301.2403 	EXP 	Fasttext: autoDraw = False
+301.2403 	EXP 	Fasttext: text = 'Bubbles can be put in a container'
+301.2403 	EXP 	fixcross: autoDraw = True
+301.6898 	EXP 	fixcross: autoDraw = False
+301.7225 	EXP 	Fasttext: autoDraw = True
+303.5242 	EXP 	New trial (rep=0, index=102): {'Statement': 'An inch is infinite', 'Correct': 'i'}
+303.5324 	DATA 	Keypress: e
+303.5397 	EXP 	fixcross: autoDraw = False
+303.5397 	EXP 	Fasttext: autoDraw = False
+303.5397 	EXP 	Fasttext: text = 'An inch is infinite'
+303.5397 	EXP 	fixcross: autoDraw = True
+303.9896 	EXP 	fixcross: autoDraw = False
+304.0227 	EXP 	Fasttext: autoDraw = True
+306.2248 	EXP 	New trial (rep=0, index=103): {'Statement': 'A minute cannot be further divided', 'Correct': 'i'}
+306.2362 	DATA 	Keypress: i
+306.2561 	EXP 	fixcross: autoDraw = False
+306.2561 	EXP 	Fasttext: autoDraw = False
+306.2561 	EXP 	Fasttext: text = 'A minute cannot be further divided'
+306.2561 	EXP 	fixcross: autoDraw = True
+306.7061 	EXP 	fixcross: autoDraw = False
+306.7232 	EXP 	Fasttext: autoDraw = True
+311.0084 	EXP 	New trial (rep=0, index=104): {'Statement': 'Time is finite', 'Correct': 'i'}
+311.0153 	DATA 	Keypress: i
+311.0235 	EXP 	fixcross: autoDraw = False
+311.0235 	EXP 	Fasttext: autoDraw = False
+311.0235 	EXP 	Fasttext: text = 'Time is finite'
+311.0235 	EXP 	fixcross: autoDraw = True
+311.4737 	EXP 	fixcross: autoDraw = False
+311.5079 	EXP 	Fasttext: autoDraw = True
+313.9262 	EXP 	New trial (rep=0, index=105): {'Statement': 'Saliva has a molecular structure', 'Correct': 'e'}
+313.9380 	DATA 	Keypress: i
+313.9581 	EXP 	fixcross: autoDraw = False
+313.9581 	EXP 	Fasttext: autoDraw = False
+313.9581 	EXP 	Fasttext: text = 'Saliva has a molecular structure'
+313.9581 	EXP 	fixcross: autoDraw = True
+314.4069 	EXP 	fixcross: autoDraw = False
+314.4405 	EXP 	Fasttext: autoDraw = True
+315.8311 	EXP 	New trial (rep=0, index=106): {'Statement': 'Spatial intervals are finite', 'Correct': 'e'}
+315.8423 	DATA 	Keypress: e
+315.8573 	EXP 	fixcross: autoDraw = False
+315.8573 	EXP 	Fasttext: autoDraw = False
+315.8573 	EXP 	Fasttext: text = 'Spatial intervals are finite'
+315.8573 	EXP 	fixcross: autoDraw = True
+316.3072 	EXP 	fixcross: autoDraw = False
+316.3399 	EXP 	Fasttext: autoDraw = True
+319.8788 	DATA 	Keypress: e
+319.8924 	EXP 	New trial (rep=0, index=107): {'Statement': 'Number cannot be further divided', 'Correct': 'i'}
+319.9075 	EXP 	fixcross: autoDraw = False
+319.9075 	EXP 	Fasttext: autoDraw = False
+319.9075 	EXP 	Fasttext: text = 'Number cannot be further divided'
+319.9075 	EXP 	fixcross: autoDraw = True
+320.3582 	EXP 	fixcross: autoDraw = False
+320.3908 	EXP 	Fasttext: autoDraw = True
+325.3921 	EXP 	Fasttext: autoDraw = False
+325.8772 	EXP 	New trial (rep=0, index=108): {'Statement': 'Space is infinite', 'Correct': 'e'}
+325.8915 	EXP 	fixcross: autoDraw = False
+325.8915 	EXP 	Fasttext: autoDraw = False
+325.8915 	EXP 	Fasttext: text = 'Space is infinite'
+325.8915 	EXP 	fixcross: autoDraw = True
+326.3415 	EXP 	fixcross: autoDraw = False
+326.3751 	EXP 	Fasttext: autoDraw = True
+328.0931 	EXP 	New trial (rep=0, index=109): {'Statement': 'Numerical intervals have an end', 'Correct': 'e'}
+328.1015 	DATA 	Keypress: e
+328.1081 	EXP 	fixcross: autoDraw = False
+328.1081 	EXP 	Fasttext: autoDraw = False
+328.1081 	EXP 	Fasttext: text = 'Numerical intervals have an end'
+328.1081 	EXP 	fixcross: autoDraw = True
+328.5579 	EXP 	fixcross: autoDraw = False
+328.5915 	EXP 	Fasttext: autoDraw = True
+331.6627 	EXP 	New trial (rep=0, index=110): {'Statement': 'A horse is used to tell time', 'Correct': 'i'}
+331.6773 	DATA 	Keypress: i
+331.6925 	EXP 	fixcross: autoDraw = False
+331.6925 	EXP 	Fasttext: autoDraw = False
+331.6925 	EXP 	Fasttext: text = 'A horse is used to tell time'
+331.6925 	EXP 	fixcross: autoDraw = True
+332.1582 	EXP 	fixcross: autoDraw = False
+332.1748 	EXP 	Fasttext: autoDraw = True
+333.9937 	EXP 	New trial (rep=0, index=111): {'Statement': 'Rocks have a molecular structure', 'Correct': 'e'}
+334.0022 	DATA 	Keypress: i
+334.0086 	EXP 	fixcross: autoDraw = False
+334.0086 	EXP 	Fasttext: autoDraw = False
+334.0086 	EXP 	Fasttext: text = 'Rocks have a molecular structure'
+334.0086 	EXP 	fixcross: autoDraw = True
+334.4585 	EXP 	fixcross: autoDraw = False
+334.4919 	EXP 	Fasttext: autoDraw = True
+336.9960 	DATA 	Keypress: e
+337.0117 	EXP 	New trial (rep=0, index=112): {'Statement': 'Dreams have a molecular structure', 'Correct': 'i'}
+337.0251 	EXP 	fixcross: autoDraw = False
+337.0251 	EXP 	Fasttext: autoDraw = False
+337.0251 	EXP 	Fasttext: text = 'Dreams have a molecular structure'
+337.0251 	EXP 	fixcross: autoDraw = True
+337.4759 	EXP 	fixcross: autoDraw = False
+337.5088 	EXP 	Fasttext: autoDraw = True
+338.5109 	EXP 	New trial (rep=0, index=113): {'Statement': 'Intervals of time cannot go on forever', 'Correct': 'e'}
+338.5200 	DATA 	Keypress: i
+338.5258 	EXP 	fixcross: autoDraw = False
+338.5258 	EXP 	Fasttext: autoDraw = False
+338.5258 	EXP 	Fasttext: text = 'Intervals of time cannot go on forever'
+338.5258 	EXP 	fixcross: autoDraw = True
+338.9753 	EXP 	fixcross: autoDraw = False
+339.0085 	EXP 	Fasttext: autoDraw = True
+344.0095 	EXP 	Fasttext: autoDraw = False
+344.0448 	EXP 	New trial (rep=0, index=114): {'Statement': 'Five has an end', 'Correct': 'e'}
+344.0525 	DATA 	Keypress: i
+344.0596 	EXP 	fixcross: autoDraw = False
+344.0596 	EXP 	Fasttext: autoDraw = False
+344.0596 	EXP 	Fasttext: text = 'Five has an end'
+344.0596 	EXP 	fixcross: autoDraw = True
+344.5103 	EXP 	fixcross: autoDraw = False
+344.5430 	EXP 	Fasttext: autoDraw = True
+345.9108 	EXP 	New trial (rep=0, index=115): {'Statement': 'Intervals of time are finite', 'Correct': 'e'}
+345.9179 	DATA 	Keypress: e
+345.9256 	EXP 	fixcross: autoDraw = False
+345.9256 	EXP 	Fasttext: autoDraw = False
+345.9256 	EXP 	Fasttext: text = 'Intervals of time are finite'
+345.9256 	EXP 	fixcross: autoDraw = True
+346.3763 	EXP 	fixcross: autoDraw = False
+346.4093 	EXP 	Fasttext: autoDraw = True
+349.2782 	EXP 	New trial (rep=0, index=116): {'Statement': 'Spatial intervals are infinite', 'Correct': 'i'}
+349.2888 	DATA 	Keypress: i
+349.3105 	EXP 	fixcross: autoDraw = False
+349.3105 	EXP 	Fasttext: autoDraw = False
+349.3105 	EXP 	Fasttext: text = 'Spatial intervals are infinite'
+349.3105 	EXP 	fixcross: autoDraw = True
+349.7595 	EXP 	fixcross: autoDraw = False
+349.7765 	EXP 	Fasttext: autoDraw = True
+351.5785 	EXP 	New trial (rep=0, index=117): {'Statement': 'Space is finite', 'Correct': 'i'}
+351.5856 	DATA 	Keypress: i
+351.5933 	EXP 	fixcross: autoDraw = False
+351.5933 	EXP 	Fasttext: autoDraw = False
+351.5933 	EXP 	Fasttext: text = 'Space is finite'
+351.5933 	EXP 	fixcross: autoDraw = True
+352.0440 	EXP 	fixcross: autoDraw = False
+352.0770 	EXP 	Fasttext: autoDraw = True
+353.8118 	EXP 	New trial (rep=0, index=118): {'Statement': 'Time can be further divided', 'Correct': 'e'}
+353.8201 	DATA 	Keypress: i
+353.8310 	EXP 	fixcross: autoDraw = False
+353.8310 	EXP 	Fasttext: autoDraw = False
+353.8310 	EXP 	Fasttext: text = 'Time can be further divided'
+353.8310 	EXP 	fixcross: autoDraw = True
+354.2930 	EXP 	fixcross: autoDraw = False
+354.3102 	EXP 	Fasttext: autoDraw = True
+356.3461 	EXP 	New trial (rep=0, index=119): {'Statement': 'A minute is infinite', 'Correct': 'i'}
+356.3530 	DATA 	Keypress: e
+356.3595 	EXP 	fixcross: autoDraw = False
+356.3595 	EXP 	Fasttext: autoDraw = False
+356.3595 	EXP 	Fasttext: text = 'A minute is infinite'
+356.3595 	EXP 	fixcross: autoDraw = True
+356.8104 	EXP 	fixcross: autoDraw = False
+356.8439 	EXP 	Fasttext: autoDraw = True
+360.6633 	EXP 	New trial (rep=0, index=120): {'Statement': 'Numerical intervals are finite', 'Correct': 'e'}
+360.6708 	DATA 	Keypress: i
+360.6778 	EXP 	fixcross: autoDraw = False
+360.6778 	EXP 	Fasttext: autoDraw = False
+360.6778 	EXP 	Fasttext: text = 'Numerical intervals are finite'
+360.6778 	EXP 	fixcross: autoDraw = True
+361.1274 	EXP 	fixcross: autoDraw = False
+361.1615 	EXP 	Fasttext: autoDraw = True
+365.1955 	EXP 	New trial (rep=0, index=121): {'Statement': 'Orange is a color', 'Correct': 'e'}
+365.2030 	DATA 	Keypress: i
+365.2049 	DATA 	Keypress: e
+365.2107 	EXP 	fixcross: autoDraw = False
+365.2107 	EXP 	Fasttext: autoDraw = False
+365.2107 	EXP 	Fasttext: text = 'Orange is a color'
+365.2107 	EXP 	fixcross: autoDraw = True
+365.6611 	EXP 	fixcross: autoDraw = False
+365.6949 	EXP 	Fasttext: autoDraw = True
+368.5319 	DATA 	Keypress: e
+368.5467 	EXP 	New trial (rep=0, index=122): {'Statement': 'Number is infinite', 'Correct': 'e'}
+368.5610 	EXP 	fixcross: autoDraw = False
+368.5610 	EXP 	Fasttext: autoDraw = False
+368.5610 	EXP 	Fasttext: text = 'Number is infinite'
+368.5610 	EXP 	fixcross: autoDraw = True
+369.0103 	EXP 	fixcross: autoDraw = False
+369.0437 	EXP 	Fasttext: autoDraw = True
+370.5796 	EXP 	New trial (rep=0, index=123): {'Statement': 'Number has an end', 'Correct': 'i'}
+370.5866 	DATA 	Keypress: e
+370.5950 	EXP 	fixcross: autoDraw = False
+370.5950 	EXP 	Fasttext: autoDraw = False
+370.5950 	EXP 	Fasttext: text = 'Number has an end'
+370.5950 	EXP 	fixcross: autoDraw = True
+371.0447 	EXP 	fixcross: autoDraw = False
+371.0779 	EXP 	Fasttext: autoDraw = True
+373.7459 	EXP 	New trial (rep=0, index=124): {'Statement': 'A pencil is used to write', 'Correct': 'e'}
+373.7529 	DATA 	Keypress: i
+373.7624 	EXP 	fixcross: autoDraw = False
+373.7624 	EXP 	Fasttext: autoDraw = False
+373.7624 	EXP 	Fasttext: text = 'A pencil is used to write'
+373.7624 	EXP 	fixcross: autoDraw = True
+374.2111 	EXP 	fixcross: autoDraw = False
+374.2446 	EXP 	Fasttext: autoDraw = True
+375.1974 	EXP 	New trial (rep=0, index=125): {'Statement': 'Numerical intervals cannot go on forever', 'Correct': 'e'}
+375.2070 	DATA 	Keypress: e
+375.2278 	EXP 	fixcross: autoDraw = False
+375.2278 	EXP 	Fasttext: autoDraw = False
+375.2278 	EXP 	Fasttext: text = 'Numerical intervals cannot go on forever'
+375.2278 	EXP 	fixcross: autoDraw = True
+375.6785 	EXP 	fixcross: autoDraw = False
+375.6946 	EXP 	Fasttext: autoDraw = True
+377.3807 	EXP 	New trial (rep=0, index=126): {'Statement': 'Time has an end', 'Correct': 'i'}
+377.3870 	DATA 	Keypress: i
+377.3945 	EXP 	fixcross: autoDraw = False
+377.3945 	EXP 	Fasttext: autoDraw = False
+377.3945 	EXP 	Fasttext: text = 'Time has an end'
+377.3945 	EXP 	fixcross: autoDraw = True
+377.8450 	EXP 	fixcross: autoDraw = False
+377.8779 	EXP 	Fasttext: autoDraw = True
+380.3464 	EXP 	New trial (rep=0, index=127): {'Statement': 'Frogs reproduce', 'Correct': 'e'}
+380.3537 	DATA 	Keypress: i
+380.3612 	EXP 	fixcross: autoDraw = False
+380.3612 	EXP 	Fasttext: autoDraw = False
+380.3612 	EXP 	Fasttext: text = 'Frogs reproduce'
+380.3612 	EXP 	fixcross: autoDraw = True
+380.8121 	EXP 	fixcross: autoDraw = False
+380.8459 	EXP 	Fasttext: autoDraw = True
+381.5305 	EXP 	New trial (rep=0, index=128): {'Statement': 'Bacteria are alive', 'Correct': 'e'}
+381.5371 	DATA 	Keypress: e
+381.5449 	EXP 	fixcross: autoDraw = False
+381.5449 	EXP 	Fasttext: autoDraw = False
+381.5449 	EXP 	Fasttext: text = 'Bacteria are alive'
+381.5449 	EXP 	fixcross: autoDraw = True
+381.9958 	EXP 	fixcross: autoDraw = False
+382.0281 	EXP 	Fasttext: autoDraw = True
+382.5303 	EXP 	New trial (rep=0, index=129): {'Statement': 'Spatial intervals cannot be further divided', 'Correct': 'i'}
+382.5383 	DATA 	Keypress: e
+382.5449 	EXP 	fixcross: autoDraw = False
+382.5449 	EXP 	Fasttext: autoDraw = False
+382.5449 	EXP 	Fasttext: text = 'Spatial intervals cannot be further divided'
+382.5449 	EXP 	fixcross: autoDraw = True
+382.9959 	EXP 	fixcross: autoDraw = False
+383.0291 	EXP 	Fasttext: autoDraw = True
+385.0983 	EXP 	New trial (rep=0, index=130): {'Statement': 'Crocodiles are alive', 'Correct': 'e'}
+385.1057 	DATA 	Keypress: e
+385.1122 	EXP 	fixcross: autoDraw = False
+385.1122 	EXP 	Fasttext: autoDraw = False
+385.1122 	EXP 	Fasttext: text = 'Crocodiles are alive'
+385.1122 	EXP 	fixcross: autoDraw = True
+385.5632 	EXP 	fixcross: autoDraw = False
+385.5953 	EXP 	Fasttext: autoDraw = True
+386.9148 	EXP 	New trial (rep=0, index=131): {'Statement': 'Computers reproduce', 'Correct': 'i'}
+386.9219 	DATA 	Keypress: e
+386.9286 	EXP 	fixcross: autoDraw = False
+386.9286 	EXP 	Fasttext: autoDraw = False
+386.9286 	EXP 	Fasttext: text = 'Computers reproduce'
+386.9286 	EXP 	fixcross: autoDraw = True
+387.3790 	EXP 	fixcross: autoDraw = False
+387.4122 	EXP 	Fasttext: autoDraw = True
+388.2481 	EXP 	New trial (rep=0, index=132): {'Statement': 'Spatial intervals cannot go on forever', 'Correct': 'e'}
+388.2558 	DATA 	Keypress: e
+388.2627 	EXP 	fixcross: autoDraw = False
+388.2627 	EXP 	Fasttext: autoDraw = False
+388.2627 	EXP 	Fasttext: text = 'Spatial intervals cannot go on forever'
+388.2627 	EXP 	fixcross: autoDraw = True
+388.7127 	EXP 	fixcross: autoDraw = False
+388.7465 	EXP 	Fasttext: autoDraw = True
+391.1973 	EXP 	New trial (rep=0, index=133): {'Statement': 'There are ninty states in the United States', 'Correct': 'i'}
+391.2092 	DATA 	Keypress: i
+391.2284 	EXP 	fixcross: autoDraw = False
+391.2284 	EXP 	Fasttext: autoDraw = False
+391.2284 	EXP 	Fasttext: text = 'There are ninty states in the United States'
+391.2284 	EXP 	fixcross: autoDraw = True
+391.6792 	EXP 	fixcross: autoDraw = False
+391.7121 	EXP 	Fasttext: autoDraw = True
+392.9849 	DATA 	Keypress: i
+392.9977 	EXP 	New trial (rep=0, index=134): {'Statement': 'Humans can breathe water', 'Correct': 'i'}
+393.0124 	EXP 	fixcross: autoDraw = False
+393.0124 	EXP 	Fasttext: autoDraw = False
+393.0124 	EXP 	Fasttext: text = 'Humans can breathe water'
+393.0124 	EXP 	fixcross: autoDraw = True
+393.4626 	EXP 	fixcross: autoDraw = False
+393.4965 	EXP 	Fasttext: autoDraw = True
+398.4970 	EXP 	Fasttext: autoDraw = False
+398.6984 	EXP 	New trial (rep=0, index=135): {'Statement': 'This sentence is written in Spanish', 'Correct': 'i'}
+398.7069 	DATA 	Keypress: i
+398.7135 	EXP 	fixcross: autoDraw = False
+398.7135 	EXP 	Fasttext: autoDraw = False
+398.7135 	EXP 	Fasttext: text = 'This sentence is written in Spanish'
+398.7135 	EXP 	fixcross: autoDraw = True
+399.1629 	EXP 	fixcross: autoDraw = False
+399.1963 	EXP 	Fasttext: autoDraw = True
+400.2658 	EXP 	New trial (rep=0, index=136): {'Statement': 'Five can go on forever', 'Correct': 'i'}
+400.2756 	DATA 	Keypress: i
+400.2976 	EXP 	fixcross: autoDraw = False
+400.2976 	EXP 	Fasttext: autoDraw = False
+400.2976 	EXP 	Fasttext: text = 'Five can go on forever'
+400.2976 	EXP 	fixcross: autoDraw = True
+400.7461 	EXP 	fixcross: autoDraw = False
+400.7631 	EXP 	Fasttext: autoDraw = True
+404.1661 	EXP 	New trial (rep=0, index=137): {'Statement': 'An inch has an end', 'Correct': 'e'}
+404.1730 	DATA 	Keypress: i
+404.1801 	EXP 	fixcross: autoDraw = False
+404.1801 	EXP 	Fasttext: autoDraw = False
+404.1801 	EXP 	Fasttext: text = 'An inch has an end'
+404.1801 	EXP 	fixcross: autoDraw = True
+404.6307 	EXP 	fixcross: autoDraw = False
+404.6638 	EXP 	Fasttext: autoDraw = True
+405.8651 	EXP 	New trial (rep=0, index=138): {'Statement': 'Number cannot go on forever', 'Correct': 'i'}
+405.8721 	DATA 	Keypress: e
+405.8800 	EXP 	fixcross: autoDraw = False
+405.8800 	EXP 	Fasttext: autoDraw = False
+405.8800 	EXP 	Fasttext: text = 'Number cannot go on forever'
+405.8800 	EXP 	fixcross: autoDraw = True
+406.3301 	EXP 	fixcross: autoDraw = False
+406.3642 	EXP 	Fasttext: autoDraw = True
+408.0157 	EXP 	New trial (rep=0, index=139): {'Statement': 'Humans can drink water', 'Correct': 'e'}
+408.0227 	DATA 	Keypress: e
+408.0308 	EXP 	fixcross: autoDraw = False
+408.0308 	EXP 	Fasttext: autoDraw = False
+408.0308 	EXP 	Fasttext: text = 'Humans can drink water'
+408.0308 	EXP 	fixcross: autoDraw = True
+408.4809 	EXP 	fixcross: autoDraw = False
+408.5143 	EXP 	Fasttext: autoDraw = True
+411.5157 	EXP 	New trial (rep=0, index=140): {'Statement': 'An inch cannot be further divided', 'Correct': 'i'}
+411.5233 	DATA 	Keypress: i
+411.5300 	EXP 	fixcross: autoDraw = False
+411.5300 	EXP 	Fasttext: autoDraw = False
+411.5300 	EXP 	Fasttext: text = 'An inch cannot be further divided'
+411.5300 	EXP 	fixcross: autoDraw = True
+411.9812 	EXP 	fixcross: autoDraw = False
+412.0148 	EXP 	Fasttext: autoDraw = True
+415.9669 	EXP 	New trial (rep=0, index=141): {'Statement': 'Clocks are alive', 'Correct': 'i'}
+415.9734 	DATA 	Keypress: e
+415.9808 	EXP 	fixcross: autoDraw = False
+415.9808 	EXP 	Fasttext: autoDraw = False
+415.9808 	EXP 	Fasttext: text = 'Clocks are alive'
+415.9808 	EXP 	fixcross: autoDraw = True
+416.4314 	EXP 	fixcross: autoDraw = False
+416.4640 	EXP 	Fasttext: autoDraw = True
+417.5829 	EXP 	New trial (rep=0, index=142): {'Statement': 'Thoughts are composed of matter', 'Correct': 'i'}
+417.5902 	DATA 	Keypress: i
+417.5983 	EXP 	fixcross: autoDraw = False
+417.5983 	EXP 	Fasttext: autoDraw = False
+417.5983 	EXP 	Fasttext: text = 'Thoughts are composed of matter'
+417.5983 	EXP 	fixcross: autoDraw = True
+418.0476 	EXP 	fixcross: autoDraw = False
+418.0816 	EXP 	Fasttext: autoDraw = True
+421.6993 	EXP 	New trial (rep=0, index=143): {'Statement': 'Jupiter is in our solar system', 'Correct': 'e'}
+421.7071 	DATA 	Keypress: i
+421.7153 	EXP 	fixcross: autoDraw = False
+421.7153 	EXP 	Fasttext: autoDraw = False
+421.7153 	EXP 	Fasttext: text = 'Jupiter is in our solar system'
+421.7153 	EXP 	fixcross: autoDraw = True
+422.1650 	EXP 	fixcross: autoDraw = False
+422.1988 	EXP 	Fasttext: autoDraw = True
+426.4333 	EXP 	New trial (rep=0, index=144): {'Statement': 'Space can go on forever', 'Correct': 'e'}
+426.4403 	DATA 	Keypress: e
+426.4481 	EXP 	fixcross: autoDraw = False
+426.4481 	EXP 	Fasttext: autoDraw = False
+426.4481 	EXP 	Fasttext: text = 'Space can go on forever'
+426.4481 	EXP 	fixcross: autoDraw = True
+426.8986 	EXP 	fixcross: autoDraw = False
+426.9318 	EXP 	Fasttext: autoDraw = True
+428.0831 	EXP 	New trial (rep=0, index=145): {'Statement': 'Number can go on forever', 'Correct': 'e'}
+428.0895 	DATA 	Keypress: e
+428.0984 	EXP 	fixcross: autoDraw = False
+428.0984 	EXP 	Fasttext: autoDraw = False
+428.0984 	EXP 	Fasttext: text = 'Number can go on forever'
+428.0984 	EXP 	fixcross: autoDraw = True
+428.5487 	EXP 	fixcross: autoDraw = False
+428.5828 	EXP 	Fasttext: autoDraw = True
+429.4181 	EXP 	New trial (rep=0, index=146): {'Statement': 'An inch is finite', 'Correct': 'e'}
+429.4253 	DATA 	Keypress: e
+429.4321 	EXP 	fixcross: autoDraw = False
+429.4321 	EXP 	Fasttext: autoDraw = False
+429.4321 	EXP 	Fasttext: text = 'An inch is finite'
+429.4321 	EXP 	fixcross: autoDraw = True
+429.8821 	EXP 	fixcross: autoDraw = False
+429.9162 	EXP 	Fasttext: autoDraw = True
+431.2331 	EXP 	New trial (rep=0, index=147): {'Statement': 'Algae is alive', 'Correct': 'e'}
+431.2395 	DATA 	Keypress: e
+431.2486 	EXP 	fixcross: autoDraw = False
+431.2486 	EXP 	Fasttext: autoDraw = False
+431.2486 	EXP 	Fasttext: text = 'Algae is alive'
+431.2486 	EXP 	fixcross: autoDraw = True
+431.6980 	EXP 	fixcross: autoDraw = False
+431.7324 	EXP 	Fasttext: autoDraw = True
+432.5506 	EXP 	New trial (rep=0, index=148): {'Statement': 'Space cannot be further divided', 'Correct': 'i'}
+432.5577 	DATA 	Keypress: e
+432.5655 	EXP 	fixcross: autoDraw = False
+432.5655 	EXP 	Fasttext: autoDraw = False
+432.5655 	EXP 	Fasttext: text = 'Space cannot be further divided'
+432.5655 	EXP 	fixcross: autoDraw = True
+433.0159 	EXP 	fixcross: autoDraw = False
+433.0487 	EXP 	Fasttext: autoDraw = True
+437.4507 	EXP 	New trial (rep=0, index=149): {'Statement': 'Time cannot go on forever', 'Correct': 'i'}
+437.4578 	DATA 	Keypress: e
+437.4660 	EXP 	fixcross: autoDraw = False
+437.4660 	EXP 	Fasttext: autoDraw = False
+437.4660 	EXP 	Fasttext: text = 'Time cannot go on forever'
+437.4660 	EXP 	fixcross: autoDraw = True
+437.9166 	EXP 	fixcross: autoDraw = False
+437.9487 	EXP 	Fasttext: autoDraw = True
+439.8507 	EXP 	New trial (rep=0, index=150): {'Statement': 'Yellow is an animal', 'Correct': 'i'}
+439.8608 	DATA 	Keypress: i
+439.8830 	EXP 	fixcross: autoDraw = False
+439.8830 	EXP 	Fasttext: autoDraw = False
+439.8830 	EXP 	Fasttext: text = 'Yellow is an animal'
+439.8830 	EXP 	fixcross: autoDraw = True
+440.3328 	EXP 	fixcross: autoDraw = False
+440.3488 	EXP 	Fasttext: autoDraw = True
+441.3186 	EXP 	New trial (rep=0, index=151): {'Statement': 'Gravity has a molecular structure', 'Correct': 'i'}
+441.3295 	DATA 	Keypress: i
+441.3498 	EXP 	fixcross: autoDraw = False
+441.3498 	EXP 	Fasttext: autoDraw = False
+441.3498 	EXP 	Fasttext: text = 'Gravity has a molecular structure'
+441.3498 	EXP 	fixcross: autoDraw = True
+441.7999 	EXP 	fixcross: autoDraw = False
+441.8167 	EXP 	Fasttext: autoDraw = True
+443.5631 	DATA 	Keypress: i
+443.5833 	EXP 	fixcross: autoDraw = False
+443.5833 	EXP 	Fasttext: autoDraw = False
+443.5833 	EXP 	EndStudyText: autoDraw = True
+444.5688 	DATA 	Keypress: e
+444.5826 	EXP 	EndStudyText: autoDraw = False
+444.9646 	EXP 	window1: mouseVisible = True

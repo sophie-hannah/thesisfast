@@ -1,3 +1,0 @@
-﻿Statement,Correct,stimuli.thisRepN,stimuli.thisTrialN,stimuli.thisN,stimuli.thisIndex,fixedcross.started,fixedcross.stopped,Statement1.started,Statement1.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-Time is endless,e,0,0,0,2,12.55950470699463,13.060020558012184,13.14314351201756,None,e,3.0486765750101767,13.14314351201756,None,6,001,2021_Nov_03_1645,softwaretest1,2021.2.3,60.359504458931255,
-Space can go on forever,e,0,1,1,6,16.22622838098323,16.727476076979656,16.80948133696802,None,i,0.5299248240189627,16.80948133696802,None,6,001,2021_Nov_03_1645,softwaretest1,2021.2.3,60.359504458931255,

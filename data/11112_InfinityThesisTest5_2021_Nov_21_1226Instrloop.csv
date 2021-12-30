@@ -1,0 +1,12 @@
+﻿FastInstructions,n,Instr1.started_mean,Instr1.started_raw,Instr1.started_std,Instr1.stopped_raw,InstrResponse.keys_raw,InstrResponse.rt_mean,InstrResponse.rt_raw,InstrResponse.rt_std,InstrResponse.started_mean,InstrResponse.started_raw,InstrResponse.started_std,InstrResponse.stopped_raw,order
+"You will be shown a total of 160 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false as quickly as possible without sacrificing accuracy. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 160 statements.  Press E to Continue",1.0,15.090203285217285,15.090203285217285,0.0,,'e',0.2374230921268463,0.2374230921268463,0.0,17.120534896850586,17.120534896850586,0.0,,0.0
+"Each statement will appear on your screen for 5 seconds and you will have those 5 seconds to decide if it is true or false before the next statement appears. There will be a timer on your screen and a reminder when you have 2 seconds remaining. If you do not respond, that answer will be considered incorrect and the task will move on to the next statement. Press E to continue",1.0,17.423431396484375,17.423431396484375,0.0,,'e',0.7266782522201538,0.7266782522201538,0.0,19.407094955444336,19.407094955444336,0.0,,1.0
+"If the statement is true, you will press the “E” key on your keyboard with your left pointer finger; if the statement is false, you will press the “I” key on your keyboard with your right pointer finger. Press E to continue",1.0,20.18963050842285,20.18963050842285,0.0,,'e',1.3312182426452637,1.3312182426452637,0.0,22.173595428466797,22.173595428466797,0.0,,2.0
+
+extraInfo
+participant,11112
+session,001
+date,2021_Nov_21_1226
+expName,InfinityThesisTest5
+psychopyVersion,2021.2.3
+frameRate,60.66796473133747

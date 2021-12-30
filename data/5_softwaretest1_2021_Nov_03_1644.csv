@@ -1,3 +1,0 @@
-﻿Statement,Correct,stimuli.thisRepN,stimuli.thisTrialN,stimuli.thisN,stimuli.thisIndex,fixedcross.started,fixedcross.stopped,Statement1.started,Statement1.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-Time is endless,e,0,0,0,2,15.289651182014495,15.791622165008448,15.85878661897732,None,e,4.863373869040515,15.85878661897732,None,5,001,2021_Nov_03_1644,softwaretest1,2021.2.3,60.012070580254374,
-Numbers are infinite,e,0,1,1,0,20.75838462699903,21.25859727797797,21.341387359017972,None,i,1.587498054956086,21.341387359017972,None,5,001,2021_Nov_03_1644,softwaretest1,2021.2.3,60.012070580254374,

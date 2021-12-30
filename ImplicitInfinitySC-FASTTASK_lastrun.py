@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Thu Dec 30 13:46:22 2021
+    on Thu Dec 30 16:44:04 2021
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/sophiecb/Desktop/Thesis/ThesisTestFast/InfinityThesisTestFAST_lastrun.py',
+    originPath='/Users/sophiecb/Desktop/Thesis/ThesisTestFast/ImplicitInfinitySC-FASTTASK_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -362,7 +362,7 @@ Instrloop.saveAsText(filename + 'Instrloop.csv', delim=',',
 # set up handler to look after randomisation of conditions etc
 Practice = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('/Users/sophiecb/Desktop/InfinityThesisPracticeStimuli.xlsx'),
+    trialList=data.importConditions('InfinityThesisPracticeFast.xlsx'),
     seed=None, name='Practice')
 thisExp.addLoop(Practice)  # add the loop to the experiment
 thisPractice = Practice.trialList[0]  # so we can initialise stimuli with some values

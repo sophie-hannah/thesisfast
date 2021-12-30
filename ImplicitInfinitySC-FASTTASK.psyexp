@@ -534,7 +534,7 @@
     <LoopInitiator loopType="TrialHandler" name="Practice">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[{'practicetext': 'A circle is a shape', 'practicecorrect': 'e'}, {'practicetext': 'Dinosaurs are extinct', 'practicecorrect': 'e'}, {'practicetext': 'Magenta is a color', 'practicecorrect': 'e'}, {'practicetext': 'A clock is used to tell time', 'practicecorrect': 'e'}, {'practicetext': 'Humans cannot breathe water', 'practicecorrect': 'e'}, {'practicetext': 'A truck is an animal', 'practicecorrect': 'i'}, {'practicetext': 'Jupiter is the planet we live on', 'practicecorrect': 'i'}, {'practicetext': 'The Earth is a star', 'practicecorrect': 'i'}, {'practicetext': 'Mississippi is a country', 'practicecorrect': 'i'}, {'practicetext': 'Humans cannot eat food', 'practicecorrect': 'i'}]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="/Users/sophiecb/Desktop/InfinityThesisPracticeStimuli.xlsx" valType="file"/>
+      <Param name="conditionsFile" updates="None" val="InfinityThesisPracticeFast.xlsx" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
