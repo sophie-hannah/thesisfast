@@ -71,6 +71,7 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
+    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'},
     {'name': 'InfinityThesisTest5.xlsx', 'path': 'InfinityThesisTest5.xlsx'},
     {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'}
   ]
@@ -366,7 +367,7 @@ function PracticeLoopBegin(PracticeLoopScheduler, snapshot) {
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
-      trialList: '/Users/sophiecb/Desktop/InfinityThesisPracticeStimuli.xlsx',
+      trialList: 'InfinityThesisPracticeFast.xlsx',
       seed: undefined, name: 'Practice'
     });
     psychoJS.experiment.addLoop(Practice); // add the loop to the experiment
