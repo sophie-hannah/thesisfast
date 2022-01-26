@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Thu Dec 30 13:46:22 2021
+    on Tue Jan 25 15:50:36 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -148,6 +148,16 @@ key_resp = keyboard.Keyboard()
 Timer = sound.Sound('A', secs=0.2, stereo=True, hamming=True,
     name='Timer')
 Timer.setVolume(1.0)
+
+# Initialize components for Routine "Demographics"
+DemographicsClock = core.Clock()
+Age = visual.Slider(win=win, name='Age',
+    startValue=None, size=(1.0, 0.1), pos=(0, -0.4), units=None,
+    labels=[(18-24,25-34,35-44,45-55,55+,prefer not to say], ticks=(1, 2, 3, 4, 5, 6), granularity=0.0,
+    style='rating', styleTweaks=(), opacity=None,
+    color='LightGray', fillColor='Red', borderColor='White', colorSpace='rgb',
+    font='Open Sans', labelHeight=0.05,
+    flip=False, depth=0, readOnly=False)
 
 # Initialize components for Routine "EndStudy"
 EndStudyClock = core.Clock()
@@ -362,7 +372,7 @@ Instrloop.saveAsText(filename + 'Instrloop.csv', delim=',',
 # set up handler to look after randomisation of conditions etc
 Practice = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('/Users/sophiecb/Desktop/InfinityThesisPracticeStimuli.xlsx'),
+    trialList=data.importConditions('InfinityThesisPracticeFast.xlsx'),
     seed=None, name='Practice')
 thisExp.addLoop(Practice)  # add the loop to the experiment
 thisPractice = Practice.trialList[0]  # so we can initialise stimuli with some values
@@ -857,6 +867,75 @@ else:
 FastLoop.saveAsText(filename + 'FastLoop.csv', delim=',',
     stimOut=params,
     dataOut=['n','all_mean','all_std', 'all_raw'])
+
+# ------Prepare to start Routine "Demographics"-------
+continueRoutine = True
+# update component parameters for each repeat
+Age.reset()
+# keep track of which components have finished
+DemographicsComponents = [Age]
+for thisComponent in DemographicsComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+DemographicsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "Demographics"-------
+while continueRoutine:
+    # get current time
+    t = DemographicsClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=DemographicsClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *Age* updates
+    if Age.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        Age.frameNStart = frameN  # exact frame index
+        Age.tStart = t  # local t and not account for scr refresh
+        Age.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(Age, 'tStartRefresh')  # time at next scr refresh
+        Age.setAutoDraw(True)
+    
+    # Check Age for response to end routine
+    if Age.getRating() is not None and Age.status == STARTED:
+        continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in DemographicsComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "Demographics"-------
+for thisComponent in DemographicsComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('Age.response', Age.getRating())
+thisExp.addData('Age.rt', Age.getRT())
+thisExp.addData('Age.started', Age.tStartRefresh)
+thisExp.addData('Age.stopped', Age.tStopRefresh)
+# the Routine "Demographics" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # ------Prepare to start Routine "EndStudy"-------
 continueRoutine = True
