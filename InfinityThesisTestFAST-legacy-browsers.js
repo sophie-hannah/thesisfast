@@ -116,6 +116,7 @@ var Timer;
 var DemographicsClock;
 var Age;
 var Education;
+var text_2;
 var EndStudyClock;
 var EndStudyText;
 var endstudykey;
@@ -236,6 +237,17 @@ async function experimentInit() {
     color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
     flip: false,
+  });
+  
+  text_2 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_2',
+    text: 'Please indicate your age and level of education',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
   });
   
   // Initialize components for Routine "EndStudy"
@@ -1088,6 +1100,7 @@ function DemographicsRoutineBegin(snapshot) {
     DemographicsComponents = [];
     DemographicsComponents.push(Age);
     DemographicsComponents.push(Education);
+    DemographicsComponents.push(text_2);
     
     DemographicsComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -1133,6 +1146,20 @@ function DemographicsRoutineEachFrame() {
     // Check Education for response to end routine
     if (Education.getRating() !== undefined && Education.status === PsychoJS.Status.STARTED) {
       continueRoutine = false; }
+    
+    // *text_2* updates
+    if (t >= 0.0 && text_2.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_2.tStart = t;  // (not accounting for frame time here)
+      text_2.frameNStart = frameN;  // exact frame index
+      
+      text_2.setAutoDraw(true);
+    }
+
+    frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (text_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      text_2.setAutoDraw(false);
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
