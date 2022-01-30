@@ -534,7 +534,7 @@
         <Param name="markerColor" updates="constant" val="red" valType="color"/>
         <Param name="name" updates="None" val="Demographics1" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-.05, 0)" valType="list"/>
         <Param name="responseColor" updates="constant" val="$(-1.0000, -1.0000, -1.0000)" valType="color"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="size" updates="constant" val="(1,1)" valType="list"/>
@@ -569,7 +569,7 @@
         <Param name="pos" updates="constant" val="(0.4, -0.4)" valType="list"/>
         <Param name="save" updates="None" val="first click" valType="str"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.3,0.1)" valType="list"/>
+        <Param name="size" updates="constant" val="(0.25,0.1)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0" valType="code"/>
@@ -601,17 +601,6 @@
     </Routine>
   </Routines>
   <Flow>
-    <LoopInitiator loopType="TrialHandler" name="testing">
-      <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="None" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="" valType="file"/>
-      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="0" valType="num"/>
-      <Param name="name" updates="None" val="testing" valType="code"/>
-      <Param name="random seed" updates="None" val="" valType="code"/>
-    </LoopInitiator>
     <Routine name="Mouse"/>
     <LoopInitiator loopType="TrialHandler" name="Instrloop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
@@ -653,7 +642,6 @@
     </LoopInitiator>
     <Routine name="FastTrial"/>
     <LoopTerminator name="FastLoop"/>
-    <LoopTerminator name="testing"/>
     <Routine name="Demographics"/>
     <Routine name="EndStudy"/>
   </Flow>

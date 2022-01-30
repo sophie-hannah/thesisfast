@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Sat Jan 29 17:37:46 2022
+    on Sun Jan 30 13:20:02 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -165,14 +165,14 @@ Demographics1 = visual.Form(win=win, name='Demographics1',
     fillColor=(1.0000, 1.0000, 1.0000), borderColor=None, itemColor=(-1.0000, -1.0000, -1.0000), 
     responseColor=(-1.0000, -1.0000, -1.0000), markerColor='red', colorSpace='rgb', 
     size=(1,1),
-    pos=(0, 0),
+    pos=(-.05, 0),
     itemPadding=0.05
 )
 button = visual.ButtonStim(win, 
     text='Next', font='Arvo',
     pos=(0.4, -0.4),units='height',
     letterHeight=0.05,
-    size=(0.3,0.1), borderWidth=0.0,
+    size=(0.25,0.1), borderWidth=0.0,
     fillColor=(-1.0000, -1.0000, -1.0000), borderColor=None,
     color=(1.0000, 1.0000, 1.0000), colorSpace='rgb',
     opacity=None,
