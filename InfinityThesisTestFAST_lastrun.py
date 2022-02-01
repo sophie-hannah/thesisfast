@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Sun Jan 30 13:20:02 2022
+    on Tue Feb  1 11:13:40 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -202,23 +202,23 @@ globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
 # set up handler to look after randomisation of conditions etc
-testing = data.TrialHandler(nReps=0.0, method='sequential', 
+work = data.TrialHandler(nReps=0.0, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
-    seed=None, name='testing')
-thisExp.addLoop(testing)  # add the loop to the experiment
-thisTesting = testing.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTesting.rgb)
-if thisTesting != None:
-    for paramName in thisTesting:
-        exec('{} = thisTesting[paramName]'.format(paramName))
+    seed=None, name='work')
+thisExp.addLoop(work)  # add the loop to the experiment
+thisWork = work.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisWork.rgb)
+if thisWork != None:
+    for paramName in thisWork:
+        exec('{} = thisWork[paramName]'.format(paramName))
 
-for thisTesting in testing:
-    currentLoop = testing
-    # abbreviate parameter names if possible (e.g. rgb = thisTesting.rgb)
-    if thisTesting != None:
-        for paramName in thisTesting:
-            exec('{} = thisTesting[paramName]'.format(paramName))
+for thisWork in work:
+    currentLoop = work
+    # abbreviate parameter names if possible (e.g. rgb = thisWork.rgb)
+    if thisWork != None:
+        for paramName in thisWork:
+            exec('{} = thisWork[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "Mouse"-------
     continueRoutine = True
@@ -708,16 +708,16 @@ for thisTesting in testing:
     for thisComponent in PracticeEndComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    testing.addData('text.started', text.tStartRefresh)
-    testing.addData('text.stopped', text.tStopRefresh)
+    work.addData('text.started', text.tStartRefresh)
+    work.addData('text.stopped', text.tStopRefresh)
     # check responses
     if key_resp_3.keys in ['', [], None]:  # No response was made
         key_resp_3.keys = None
-    testing.addData('key_resp_3.keys',key_resp_3.keys)
+    work.addData('key_resp_3.keys',key_resp_3.keys)
     if key_resp_3.keys != None:  # we had a response
-        testing.addData('key_resp_3.rt', key_resp_3.rt)
-    testing.addData('key_resp_3.started', key_resp_3.tStartRefresh)
-    testing.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
+        work.addData('key_resp_3.rt', key_resp_3.rt)
+    work.addData('key_resp_3.started', key_resp_3.tStartRefresh)
+    work.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
     
     # set up handler to look after randomisation of conditions etc
     FastLoop = data.TrialHandler(nReps=1.0, method='random', 
@@ -914,15 +914,15 @@ for thisTesting in testing:
         dataOut=['n','all_mean','all_std', 'all_raw'])
     thisExp.nextEntry()
     
-# completed 0.0 repeats of 'testing'
+# completed 0.0 repeats of 'work'
 
 # get names of stimulus parameters
-if testing.trialList in ([], [None], None):
+if work.trialList in ([], [None], None):
     params = []
 else:
-    params = testing.trialList[0].keys()
+    params = work.trialList[0].keys()
 # save data for this loop
-testing.saveAsText(filename + 'testing.csv', delim=',',
+work.saveAsText(filename + 'work.csv', delim=',',
     stimOut=params,
     dataOut=['n','all_mean','all_std', 'all_raw'])
 
@@ -1039,7 +1039,7 @@ while continueRoutine:
 for thisComponent in DemographicsComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-Demographics1.addDataToExp(thisExp, 'columns')
+Demographics1.addDataToExp(thisExp, 'rows')
 Demographics1.autodraw = False
 thisExp.addData('button.started', button.tStartRefresh)
 thisExp.addData('button.stopped', button.tStopRefresh)

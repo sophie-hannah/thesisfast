@@ -301,25 +301,6 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="BlockSelect">
-      <CodeComponent name="code">
-        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="nRepsblock1=0&amp;#10;nRepsblock2=0" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="nRepsblock1 = 0;&amp;#10;nRepsblock2 = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if ((selectBlock === 1)) {&amp;#10;    nRepsblock1 = 1;&amp;#10;    nRepsblock2 = 0;&amp;#10;} else {&amp;#10;    if ((selectBlock === 2)) {&amp;#10;        nRepsblock1 = 0;&amp;#10;        nRepsblock2 = 1;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="if selectBlock==1:&amp;#10; nRepsblock1=1&amp;#10; nRepsblock2=0&amp;#10;elif selectBlock==2:&amp;#10; nRepsblock1=0&amp;#10; nRepsblock2=1" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code" valType="code"/>
-      </CodeComponent>
-    </Routine>
     <Routine name="EndStudy">
       <TextComponent name="EndStudyText">
         <Param name="color" updates="constant" val="$[-1.0000, -1.0000, -1.0000]" valType="color"/>
@@ -515,90 +496,6 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="Demographics">
-      <FormComponent name="Demographics1">
-        <Param name="Data Format" updates="constant" val="columns" valType="str"/>
-        <Param name="Font" updates="constant" val="Open Sans" valType="str"/>
-        <Param name="Item Padding" updates="constant" val="0.05" valType="num"/>
-        <Param name="Items" updates="constant" val="demotry1.xlsx" valType="file"/>
-        <Param name="Randomize" updates="constant" val="False" valType="bool"/>
-        <Param name="Style" updates="constant" val="custom..." valType="str"/>
-        <Param name="Text Height" updates="constant" val="0.025" valType="num"/>
-        <Param name="borderColor" updates="constant" val="" valType="color"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="$(1.0000, 1.0000, 1.0000)" valType="color"/>
-        <Param name="itemColor" updates="constant" val="$(-1.0000, -1.0000, -1.0000)" valType="color"/>
-        <Param name="markerColor" updates="constant" val="red" valType="color"/>
-        <Param name="name" updates="None" val="Demographics1" valType="code"/>
-        <Param name="opacity" updates="constant" val="" valType="num"/>
-        <Param name="pos" updates="constant" val="(-.05, 0)" valType="list"/>
-        <Param name="responseColor" updates="constant" val="$(-1.0000, -1.0000, -1.0000)" valType="color"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(1,1)" valType="list"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-      </FormComponent>
-      <ButtonComponent name="button">
-        <Param name="anchor" updates="constant" val="bottom-right" valType="str"/>
-        <Param name="bold" updates="constant" val="True" valType="bool"/>
-        <Param name="borderColor" updates="constant" val="None" valType="color"/>
-        <Param name="borderWidth" updates="constant" val="0" valType="num"/>
-        <Param name="callback" updates="constant" val="" valType="extendedCode"/>
-        <Param name="color" updates="constant" val="$(1.0000, 1.0000, 1.0000)" valType="color"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="contrast" updates="constant" val="1" valType="num"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="$(-1.0000, -1.0000, -1.0000)" valType="color"/>
-        <Param name="font" updates="constant" val="Arvo" valType="str"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="italic" updates="constant" val="False" valType="bool"/>
-        <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
-        <Param name="name" updates="None" val="button" valType="code"/>
-        <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="constant" val="" valType="num"/>
-        <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="padding" updates="constant" val="" valType="num"/>
-        <Param name="pos" updates="constant" val="(0.4, -0.4)" valType="list"/>
-        <Param name="save" updates="None" val="first click" valType="str"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.25,0.1)" valType="list"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Next" valType="str"/>
-        <Param name="timeRelativeTo" updates="constant" val="button onset" valType="str"/>
-        <Param name="units" updates="None" val="height" valType="str"/>
-      </ButtonComponent>
-      <MouseComponent name="mouse">
-        <Param name="clickable" updates="constant" val="(button)" valType="list"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutineOnPress" updates="constant" val="valid click" valType="str"/>
-        <Param name="name" updates="None" val="mouse" valType="code"/>
-        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
-        <Param name="saveMouseState" updates="None" val="final" valType="str"/>
-        <Param name="saveParamsClickable" updates="constant" val="name," valType="list"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
-        <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
-      </MouseComponent>
-    </Routine>
   </Routines>
   <Flow>
     <Routine name="Mouse"/>
@@ -642,7 +539,6 @@
     </LoopInitiator>
     <Routine name="FastTrial"/>
     <LoopTerminator name="FastLoop"/>
-    <Routine name="Demographics"/>
     <Routine name="EndStudy"/>
   </Flow>
 </PsychoPy2experiment>

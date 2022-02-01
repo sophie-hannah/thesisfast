@@ -51,9 +51,6 @@ const FastLoopLoopScheduler = new Scheduler(psychoJS);
 flowScheduler.add(FastLoopLoopBegin(FastLoopLoopScheduler));
 flowScheduler.add(FastLoopLoopScheduler);
 flowScheduler.add(FastLoopLoopEnd);
-flowScheduler.add(DemographicsRoutineBegin());
-flowScheduler.add(DemographicsRoutineEachFrame());
-flowScheduler.add(DemographicsRoutineEnd());
 flowScheduler.add(EndStudyRoutineBegin());
 flowScheduler.add(EndStudyRoutineEachFrame());
 flowScheduler.add(EndStudyRoutineEnd());
@@ -66,9 +63,9 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'},
+    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'},
     {'name': 'InfinityThesisTest5.xlsx', 'path': 'InfinityThesisTest5.xlsx'},
-    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'}
+    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'}
   ]
 });
 
@@ -113,10 +110,6 @@ var fixcross;
 var Fasttext;
 var key_resp;
 var Timer;
-var DemographicsClock;
-var Age;
-var Education;
-var text_2;
 var EndStudyClock;
 var EndStudyText;
 var endstudykey;
@@ -217,39 +210,6 @@ async function experimentInit() {
     secs: 0.2,
     });
   Timer.setVolume(1.0);
-  // Initialize components for Routine "Demographics"
-  DemographicsClock = new util.Clock();
-  Age = new visual.Slider({
-    win: psychoJS.window, name: 'Age',
-    size: [1.0, 0.1], pos: [0, (- 0.4)], units: 'height',
-    labels: None, ticks: [1, 2, 3, 4, 5, 6],
-    granularity: 0.0, style: ["RATING"],
-    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    fontFamily: 'Open Sans', bold: true, italic: false, depth: 0, 
-    flip: false,
-  });
-  
-  Education = new visual.Slider({
-    win: psychoJS.window, name: 'Education',
-    size: [1.0, 0.1], pos: [0, (- 0.4)], units: 'height',
-    labels: None, ticks: [1, 2, 3, 4, 5, 6],
-    granularity: 0.0, style: ["RATING"],
-    color: new util.Color('LightGray'), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    fontFamily: 'Open Sans', bold: true, italic: false, depth: -1, 
-    flip: false,
-  });
-  
-  text_2 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_2',
-    text: 'Please indicate your age and level of education',
-    font: 'Open Sans',
-    units: undefined, 
-    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -2.0 
-  });
-  
   // Initialize components for Routine "EndStudy"
   EndStudyClock = new util.Clock();
   EndStudyText = new visual.TextStim({
@@ -762,7 +722,7 @@ function FastPracticeRoutineEnd() {
          key_resp_2.corr = 0;  // failed to respond (incorrectly)
       }
     }
-    // store data for psychoJS.experiment (ExperimentHandler)
+    // store data for thisExp (ExperimentHandler)
     psychoJS.experiment.addData('key_resp_2.keys', key_resp_2.keys);
     psychoJS.experiment.addData('key_resp_2.corr', key_resp_2.corr);
     if (typeof key_resp_2.keys !== 'undefined') {  // we had a response
@@ -1068,7 +1028,7 @@ function FastTrialRoutineEnd() {
          key_resp.corr = 0;  // failed to respond (incorrectly)
       }
     }
-    // store data for psychoJS.experiment (ExperimentHandler)
+    // store data for thisExp (ExperimentHandler)
     psychoJS.experiment.addData('key_resp.keys', key_resp.keys);
     psychoJS.experiment.addData('key_resp.corr', key_resp.corr);
     if (typeof key_resp.keys !== 'undefined') {  // we had a response
@@ -1078,130 +1038,6 @@ function FastTrialRoutineEnd() {
     
     key_resp.stop();
     Timer.stop();  // ensure sound has stopped at end of routine
-    return Scheduler.Event.NEXT;
-  };
-}
-
-
-var DemographicsComponents;
-function DemographicsRoutineBegin(snapshot) {
-  return async function () {
-    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
-    
-    //------Prepare to start Routine 'Demographics'-------
-    t = 0;
-    DemographicsClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    // update component parameters for each repeat
-    Age.reset()
-    Education.reset()
-    // keep track of which components have finished
-    DemographicsComponents = [];
-    DemographicsComponents.push(Age);
-    DemographicsComponents.push(Education);
-    DemographicsComponents.push(text_2);
-    
-    DemographicsComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-function DemographicsRoutineEachFrame() {
-  return async function () {
-    //------Loop for each frame of Routine 'Demographics'-------
-    // get current time
-    t = DemographicsClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    
-    // *Age* updates
-    if (t >= 0.0 && Age.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      Age.tStart = t;  // (not accounting for frame time here)
-      Age.frameNStart = frameN;  // exact frame index
-      
-      Age.setAutoDraw(true);
-    }
-
-    
-    // Check Age for response to end routine
-    if (Age.getRating() !== undefined && Age.status === PsychoJS.Status.STARTED) {
-      continueRoutine = false; }
-    
-    // *Education* updates
-    if (t >= 0.0 && Education.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      Education.tStart = t;  // (not accounting for frame time here)
-      Education.frameNStart = frameN;  // exact frame index
-      
-      Education.setAutoDraw(true);
-    }
-
-    
-    // Check Education for response to end routine
-    if (Education.getRating() !== undefined && Education.status === PsychoJS.Status.STARTED) {
-      continueRoutine = false; }
-    
-    // *text_2* updates
-    if (t >= 0.0 && text_2.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      text_2.tStart = t;  // (not accounting for frame time here)
-      text_2.frameNStart = frameN;  // exact frame index
-      
-      text_2.setAutoDraw(true);
-    }
-
-    frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (text_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      text_2.setAutoDraw(false);
-    }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    DemographicsComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-      }
-    });
-    
-    // refresh the screen if continuing
-    if (continueRoutine) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function DemographicsRoutineEnd() {
-  return async function () {
-    //------Ending Routine 'Demographics'-------
-    DemographicsComponents.forEach( function(thisComponent) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    });
-    psychoJS.experiment.addData('Age.response', Age.getRating());
-    psychoJS.experiment.addData('Age.rt', Age.getRT());
-    psychoJS.experiment.addData('Education.response', Education.getRating());
-    psychoJS.experiment.addData('Education.rt', Education.getRT());
-    // the Routine "Demographics" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
     return Scheduler.Event.NEXT;
   };
 }
@@ -1367,8 +1203,6 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
-  
-  
   
   
   psychoJS.window.close();
