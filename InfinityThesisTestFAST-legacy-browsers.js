@@ -440,7 +440,6 @@ function FastInstrRoutineBegin(snapshot) {
     FastInstrClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(30.000000);
     // update component parameters for each repeat
     Instr1.setText(FastInstructions);
     InstrResponse.keys = undefined;
@@ -478,10 +477,6 @@ function FastInstrRoutineEachFrame() {
       Instr1.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (Instr1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      Instr1.setAutoDraw(false);
-    }
     
     // *InstrResponse* updates
     if (t >= 2 && InstrResponse.status === PsychoJS.Status.NOT_STARTED) {
@@ -529,7 +524,7 @@ function FastInstrRoutineEachFrame() {
     });
     
     // refresh the screen if continuing
-    if (continueRoutine && routineTimer.getTime() > 0) {
+    if (continueRoutine) {
       return Scheduler.Event.FLIP_REPEAT;
     } else {
       return Scheduler.Event.NEXT;
@@ -553,6 +548,9 @@ function FastInstrRoutineEnd() {
         }
     
     InstrResponse.stop();
+    // the Routine "FastInstr" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
     return Scheduler.Event.NEXT;
   };
 }
