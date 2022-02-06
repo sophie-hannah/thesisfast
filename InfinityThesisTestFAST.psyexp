@@ -323,7 +323,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="30" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Thank you for completing this study" valType="str"/>
+        <Param name="text" updates="constant" val="Thank you for completing this study. Please press esc, return to qualtrics, and input the following unique code in the Qualtrics survey: &amp;#10;&amp;#10;bravecoconut155" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>

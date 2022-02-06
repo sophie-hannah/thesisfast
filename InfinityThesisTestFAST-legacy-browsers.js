@@ -64,8 +64,8 @@ psychoJS.start({
   expInfo: expInfo,
   resources: [
     {'name': 'InfinityThesisTest5.xlsx', 'path': 'InfinityThesisTest5.xlsx'},
-    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'},
-    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'}
+    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'},
+    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'}
   ]
 });
 
@@ -215,7 +215,7 @@ async function experimentInit() {
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study',
+    text: 'Thank you for completing this study. Please press esc, return to qualtrics, and input the following unique code in the Qualtrics survey: \n\nbravecoconut155',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
