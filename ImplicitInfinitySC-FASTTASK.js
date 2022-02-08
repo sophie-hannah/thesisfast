@@ -13,7 +13,7 @@ const { round } = util;
 
 // store info about the experiment session:
 let expName = 'ImplicitInfinitySC-FASTTASK';  // from the Builder filename that created this script
-let expInfo = {'participant': '', 'session': '001'};
+let expInfo = {'Subject ID from Qualtrics': ''};
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
@@ -118,6 +118,7 @@ var fixcross;
 var Fasttext;
 var key_resp;
 var Timer;
+var myCount;
 var EndStudyClock;
 var EndStudyText;
 var endstudykey;
@@ -178,7 +179,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘E’ if the statement is true and ‘I’ if the statement is false. \n\nPress E to continue',
+    text: 'You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress F to continue',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
@@ -218,12 +219,14 @@ async function experimentInit() {
     secs: 0.2,
     });
   Timer.setVolume(1.0);
+  myCount = 0;
+  
   // Initialize components for Routine "EndStudy"
   EndStudyClock = new util.Clock();
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study',
+    text: 'Thank you for completing this study. Please return to Qualtrics and input the following unique code into the survey: \n\ncurioustree42',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
@@ -504,7 +507,7 @@ function FastInstrRoutineEachFrame() {
   }
 
     if (InstrResponse.status === PsychoJS.Status.STARTED) {
-      let theseKeys = InstrResponse.getKeys({keyList: ['e'], waitRelease: false});
+      let theseKeys = InstrResponse.getKeys({keyList: ['f'], waitRelease: false});
       _InstrResponse_allKeys = _InstrResponse_allKeys.concat(theseKeys);
       if (_InstrResponse_allKeys.length > 0) {
         InstrResponse.keys = _InstrResponse_allKeys[_InstrResponse_allKeys.length - 1].name;  // just the last key pressed
@@ -649,7 +652,7 @@ function FastPracticeRoutineEachFrame() {
   }
 
     if (key_resp_2.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_2.getKeys({keyList: ['e', 'i'], waitRelease: false});
+      let theseKeys = key_resp_2.getKeys({keyList: ['f', 'j'], waitRelease: false});
       _key_resp_2_allKeys = _key_resp_2_allKeys.concat(theseKeys);
       if (_key_resp_2_allKeys.length > 0) {
         key_resp_2.keys = _key_resp_2_allKeys[_key_resp_2_allKeys.length - 1].name;  // just the last key pressed
@@ -808,7 +811,7 @@ function PracticeEndRoutineEachFrame() {
   }
 
     if (key_resp_3.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp_3.getKeys({keyList: ['e'], waitRelease: false});
+      let theseKeys = key_resp_3.getKeys({keyList: ['f'], waitRelease: false});
       _key_resp_3_allKeys = _key_resp_3_allKeys.concat(theseKeys);
       if (_key_resp_3_allKeys.length > 0) {
         key_resp_3.keys = _key_resp_3_allKeys[_key_resp_3_allKeys.length - 1].name;  // just the last key pressed
@@ -884,6 +887,11 @@ function FastTrialRoutineBegin(snapshot) {
     _key_resp_allKeys = [];
     Timer.secs=0.2;
     Timer.setVolume(1.0);
+    myCount = (myCount + 1);
+    if ((myCount > 80)) {
+        FastLoop.finished = true;
+    }
+    
     // keep track of which components have finished
     FastTrialComponents = [];
     FastTrialComponents.push(fixcross);
@@ -953,7 +961,7 @@ function FastTrialRoutineEachFrame() {
   }
 
     if (key_resp.status === PsychoJS.Status.STARTED) {
-      let theseKeys = key_resp.getKeys({keyList: ['e', 'i'], waitRelease: false});
+      let theseKeys = key_resp.getKeys({keyList: ['f', 'j'], waitRelease: false});
       _key_resp_allKeys = _key_resp_allKeys.concat(theseKeys);
       if (_key_resp_allKeys.length > 0) {
         key_resp.keys = _key_resp_allKeys[_key_resp_allKeys.length - 1].name;  // just the last key pressed
@@ -1106,7 +1114,7 @@ function EndStudyRoutineEachFrame() {
     }
 
     if (endstudykey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = endstudykey.getKeys({keyList: ['e'], waitRelease: false});
+      let theseKeys = endstudykey.getKeys({keyList: ['f'], waitRelease: false});
       _endstudykey_allKeys = _endstudykey_allKeys.concat(theseKeys);
       if (_endstudykey_allKeys.length > 0) {
         endstudykey.keys = _endstudykey_allKeys[_endstudykey_allKeys.length - 1].name;  // just the last key pressed
@@ -1202,6 +1210,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   

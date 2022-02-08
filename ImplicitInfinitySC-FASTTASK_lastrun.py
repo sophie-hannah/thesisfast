@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Thu Dec 30 16:44:04 2021
+    on Tue Feb  8 16:36:18 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -121,7 +121,7 @@ scaretone.setVolume(1.0)
 # Initialize components for Routine "PracticeEnd"
 PracticeEndClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘E’ if the statement is true and ‘I’ if the statement is false. \n\nPress E to continue',
+    text='You have finished the trial period. You will now complete the official task. Judge the following statements as quickly as you can without sacrificing accuracy.\n\nPress ‘F’ if the statement is true and ‘J’ if the statement is false. \n\nPress F to continue',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
@@ -148,11 +148,12 @@ key_resp = keyboard.Keyboard()
 Timer = sound.Sound('A', secs=0.2, stereo=True, hamming=True,
     name='Timer')
 Timer.setVolume(1.0)
+myCount = 0
 
 # Initialize components for Routine "EndStudy"
 EndStudyClock = core.Clock()
 EndStudyText = visual.TextStim(win=win, name='EndStudyText',
-    text='Thank you for completing this study',
+    text='Thank you for completing this study. Please return to Qualtrics and input the following unique code into the survey: \n\ncurioustree42',
     font='Open Sans',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
     color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
@@ -306,7 +307,7 @@ for thisInstrloop in Instrloop:
                 win.timeOnFlip(InstrResponse, 'tStopRefresh')  # time at next scr refresh
                 InstrResponse.status = FINISHED
         if InstrResponse.status == STARTED and not waitOnFlip:
-            theseKeys = InstrResponse.getKeys(keyList=['e'], waitRelease=False)
+            theseKeys = InstrResponse.getKeys(keyList=['f'], waitRelease=False)
             _InstrResponse_allKeys.extend(theseKeys)
             if len(_InstrResponse_allKeys):
                 InstrResponse.keys = _InstrResponse_allKeys[-1].name  # just the last key pressed
@@ -468,7 +469,7 @@ for thisPractice in Practice:
                 win.timeOnFlip(key_resp_2, 'tStopRefresh')  # time at next scr refresh
                 key_resp_2.status = FINISHED
         if key_resp_2.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_2.getKeys(keyList=['e', 'i'], waitRelease=False)
+            theseKeys = key_resp_2.getKeys(keyList=['f', 'j'], waitRelease=False)
             _key_resp_2_allKeys.extend(theseKeys)
             if len(_key_resp_2_allKeys):
                 key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
@@ -623,7 +624,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(key_resp_3, 'tStopRefresh')  # time at next scr refresh
             key_resp_3.status = FINISHED
     if key_resp_3.status == STARTED and not waitOnFlip:
-        theseKeys = key_resp_3.getKeys(keyList=['e'], waitRelease=False)
+        theseKeys = key_resp_3.getKeys(keyList=['f'], waitRelease=False)
         _key_resp_3_allKeys.extend(theseKeys)
         if len(_key_resp_3_allKeys):
             key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
@@ -667,7 +668,7 @@ thisExp.nextEntry()
 # set up handler to look after randomisation of conditions etc
 FastLoop = data.TrialHandler(nReps=1.0, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('InfinityThesisTest5.xlsx'),
+    trialList=data.importConditions('InfinityThesisStimuliFAST.xlsx'),
     seed=None, name='FastLoop')
 thisExp.addLoop(FastLoop)  # add the loop to the experiment
 thisFastLoop = FastLoop.trialList[0]  # so we can initialise stimuli with some values
@@ -693,6 +694,9 @@ for thisFastLoop in FastLoop:
     _key_resp_allKeys = []
     Timer.setSound('A', secs=0.2, hamming=True)
     Timer.setVolume(1.0, log=False)
+    myCount = myCount + 1
+    if myCount > 80:
+        FastLoop.finished = True
     # keep track of which components have finished
     FastTrialComponents = [fixcross, Fasttext, key_resp, Timer]
     for thisComponent in FastTrialComponents:
@@ -773,7 +777,7 @@ for thisFastLoop in FastLoop:
                 win.timeOnFlip(key_resp, 'tStopRefresh')  # time at next scr refresh
                 key_resp.status = FINISHED
         if key_resp.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp.getKeys(keyList=['e', 'i'], waitRelease=False)
+            theseKeys = key_resp.getKeys(keyList=['f', 'j'], waitRelease=False)
             _key_resp_allKeys.extend(theseKeys)
             if len(_key_resp_allKeys):
                 key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
@@ -919,7 +923,7 @@ while continueRoutine:
         win.callOnFlip(endstudykey.clock.reset)  # t=0 on next screen flip
         win.callOnFlip(endstudykey.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if endstudykey.status == STARTED and not waitOnFlip:
-        theseKeys = endstudykey.getKeys(keyList=['e'], waitRelease=False)
+        theseKeys = endstudykey.getKeys(keyList=['f'], waitRelease=False)
         _endstudykey_allKeys.extend(theseKeys)
         if len(_endstudykey_allKeys):
             endstudykey.keys = _endstudykey_allKeys[-1].name  # just the last key pressed
