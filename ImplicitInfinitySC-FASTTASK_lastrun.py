@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Tue Feb  8 16:36:18 2022
+    on Thu Feb 10 16:41:31 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -36,8 +36,8 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
-expName = 'InfinityThesisTest5'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'session': '001'}
+expName = 'SCThesis2022Fast'  # from the Builder filename that created this script
+expInfo = {'participant': '', "Enter the ID from Qualtrics into the 'Participant' box above. Leave this box blank.": ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -117,6 +117,20 @@ key_resp_2 = keyboard.Keyboard()
 scaretone = sound.Sound('A', secs=0.2, stereo=True, hamming=True,
     name='scaretone')
 scaretone.setVolume(1.0)
+FTrue = visual.TextStim(win=win, name='FTrue',
+    text='F=TRUE',
+    font='Open Sans',
+    pos=(-.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
+    color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-4.0);
+JFALSE = visual.TextStim(win=win, name='JFALSE',
+    text='J=FALSE',
+    font='Open Sans',
+    pos=(.5,.3), height=0.06, wrapWidth=None, ori=0.0, 
+    color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-5.0);
 
 # Initialize components for Routine "PracticeEnd"
 PracticeEndClock = core.Clock()
@@ -149,6 +163,20 @@ Timer = sound.Sound('A', secs=0.2, stereo=True, hamming=True,
     name='Timer')
 Timer.setVolume(1.0)
 myCount = 0
+TRUE = visual.TextStim(win=win, name='TRUE',
+    text='F=TRUE',
+    font='Open Sans',
+    pos=(-.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
+    color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-5.0);
+FALSE = visual.TextStim(win=win, name='FALSE',
+    text='J=FALSE',
+    font='Open Sans',
+    pos=(.5, .3), height=0.06, wrapWidth=None, ori=0.0, 
+    color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-6.0);
 
 # Initialize components for Routine "EndStudy"
 EndStudyClock = core.Clock()
@@ -287,7 +315,7 @@ for thisInstrloop in Instrloop:
         
         # *InstrResponse* updates
         waitOnFlip = False
-        if InstrResponse.status == NOT_STARTED and tThisFlip >= 2-frameTolerance:
+        if InstrResponse.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
             InstrResponse.frameNStart = frameN  # exact frame index
             InstrResponse.tStart = t  # local t and not account for scr refresh
@@ -381,7 +409,7 @@ for thisPractice in Practice:
     
     # ------Prepare to start Routine "FastPractice"-------
     continueRoutine = True
-    routineTimer.add(6.000000)
+    routineTimer.add(10.050000)
     # update component parameters for each repeat
     PracticeText.setText(practicetext)
     key_resp_2.keys = []
@@ -390,7 +418,7 @@ for thisPractice in Practice:
     scaretone.setSound('A', secs=0.2, hamming=True)
     scaretone.setVolume(1.0, log=False)
     # keep track of which components have finished
-    FastPracticeComponents = [fixcross1, PracticeText, key_resp_2, scaretone]
+    FastPracticeComponents = [fixcross1, PracticeText, key_resp_2, scaretone, FTrue, JFALSE]
     for thisComponent in FastPracticeComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -497,6 +525,40 @@ for thisPractice in Practice:
                 win.timeOnFlip(scaretone, 'tStopRefresh')  # time at next scr refresh
                 scaretone.stop()
         
+        # *FTrue* updates
+        if FTrue.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
+            # keep track of start time/frame for later
+            FTrue.frameNStart = frameN  # exact frame index
+            FTrue.tStart = t  # local t and not account for scr refresh
+            FTrue.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FTrue, 'tStartRefresh')  # time at next scr refresh
+            FTrue.setAutoDraw(True)
+        if FTrue.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > FTrue.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                FTrue.tStop = t  # not accounting for scr refresh
+                FTrue.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(FTrue, 'tStopRefresh')  # time at next scr refresh
+                FTrue.setAutoDraw(False)
+        
+        # *JFALSE* updates
+        if JFALSE.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
+            # keep track of start time/frame for later
+            JFALSE.frameNStart = frameN  # exact frame index
+            JFALSE.tStart = t  # local t and not account for scr refresh
+            JFALSE.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(JFALSE, 'tStartRefresh')  # time at next scr refresh
+            JFALSE.setAutoDraw(True)
+        if JFALSE.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > JFALSE.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                JFALSE.tStop = t  # not accounting for scr refresh
+                JFALSE.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(JFALSE, 'tStopRefresh')  # time at next scr refresh
+                JFALSE.setAutoDraw(False)
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -540,6 +602,8 @@ for thisPractice in Practice:
     scaretone.stop()  # ensure sound has stopped at end of routine
     Practice.addData('scaretone.started', scaretone.tStartRefresh)
     Practice.addData('scaretone.stopped', scaretone.tStopRefresh)
+    Practice.addData('JFALSE.started', JFALSE.tStartRefresh)
+    Practice.addData('JFALSE.stopped', JFALSE.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 1.0 repeats of 'Practice'
@@ -686,7 +750,7 @@ for thisFastLoop in FastLoop:
     
     # ------Prepare to start Routine "FastTrial"-------
     continueRoutine = True
-    routineTimer.add(6.000000)
+    routineTimer.add(10.060000)
     # update component parameters for each repeat
     Fasttext.setText(Statement)
     key_resp.keys = []
@@ -698,7 +762,7 @@ for thisFastLoop in FastLoop:
     if myCount > 80:
         FastLoop.finished = True
     # keep track of which components have finished
-    FastTrialComponents = [fixcross, Fasttext, key_resp, Timer]
+    FastTrialComponents = [fixcross, Fasttext, key_resp, Timer, TRUE, FALSE]
     for thisComponent in FastTrialComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -804,6 +868,40 @@ for thisFastLoop in FastLoop:
                 Timer.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(Timer, 'tStopRefresh')  # time at next scr refresh
                 Timer.stop()
+        
+        # *TRUE* updates
+        if TRUE.status == NOT_STARTED and tThisFlip >= 0.05-frameTolerance:
+            # keep track of start time/frame for later
+            TRUE.frameNStart = frameN  # exact frame index
+            TRUE.tStart = t  # local t and not account for scr refresh
+            TRUE.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(TRUE, 'tStartRefresh')  # time at next scr refresh
+            TRUE.setAutoDraw(True)
+        if TRUE.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > TRUE.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                TRUE.tStop = t  # not accounting for scr refresh
+                TRUE.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(TRUE, 'tStopRefresh')  # time at next scr refresh
+                TRUE.setAutoDraw(False)
+        
+        # *FALSE* updates
+        if FALSE.status == NOT_STARTED and tThisFlip >= 0.06-frameTolerance:
+            # keep track of start time/frame for later
+            FALSE.frameNStart = frameN  # exact frame index
+            FALSE.tStart = t  # local t and not account for scr refresh
+            FALSE.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(FALSE, 'tStartRefresh')  # time at next scr refresh
+            FALSE.setAutoDraw(True)
+        if FALSE.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > FALSE.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                FALSE.tStop = t  # not accounting for scr refresh
+                FALSE.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(FALSE, 'tStopRefresh')  # time at next scr refresh
+                FALSE.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):

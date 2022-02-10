@@ -5,7 +5,7 @@
 
 // store info about the experiment session:
 let expName = 'ImplicitInfinitySC-FASTTASK';  // from the Builder filename that created this script
-let expInfo = {'Subject ID from Qualtrics': ''};
+let expInfo = {'participant': '', "Enter the ID from Qualtrics into the 'Participant' box above. Leave this box blank.": ''};
 
 // Start code blocks for 'Before Experiment'
 // init psychoJS:
@@ -102,6 +102,8 @@ var fixcross1;
 var PracticeText;
 var key_resp_2;
 var scaretone;
+var FTrue;
+var JFALSE;
 var PracticeEndClock;
 var text;
 var key_resp_3;
@@ -111,6 +113,8 @@ var Fasttext;
 var key_resp;
 var Timer;
 var myCount;
+var TRUE;
+var FALSE;
 var EndStudyClock;
 var EndStudyText;
 var endstudykey;
@@ -166,6 +170,28 @@ async function experimentInit() {
     secs: 0.2,
     });
   scaretone.setVolume(1.0);
+  FTrue = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'FTrue',
+    text: 'F=TRUE',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [(- 0.5), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
+    color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
+    depth: -4.0 
+  });
+  
+  JFALSE = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'JFALSE',
+    text: 'J=FALSE',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0.5, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
+    color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
+    depth: -5.0 
+  });
+  
   // Initialize components for Routine "PracticeEnd"
   PracticeEndClock = new util.Clock();
   text = new visual.TextStim({
@@ -212,6 +238,28 @@ async function experimentInit() {
     });
   Timer.setVolume(1.0);
   myCount = 0;
+  
+  TRUE = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'TRUE',
+    text: 'F=TRUE',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [(- 0.5), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
+    color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
+    depth: -5.0 
+  });
+  
+  FALSE = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'FALSE',
+    text: 'J=FALSE',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0.5, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
+    color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
+    depth: -6.0 
+  });
   
   // Initialize components for Routine "EndStudy"
   EndStudyClock = new util.Clock();
@@ -487,7 +535,7 @@ function FastInstrRoutineEachFrame() {
     }
     
     // *InstrResponse* updates
-    if (t >= 2 && InstrResponse.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0 && InstrResponse.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       InstrResponse.tStart = t;  // (not accounting for frame time here)
       InstrResponse.frameNStart = frameN;  // exact frame index
@@ -498,7 +546,7 @@ function FastInstrRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { InstrResponse.clearEvents(); });
     }
 
-    frameRemains = 2 + 28 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0 + 28 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (InstrResponse.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       InstrResponse.status = PsychoJS.Status.FINISHED;
   }
@@ -572,7 +620,7 @@ function FastPracticeRoutineBegin(snapshot) {
     FastPracticeClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(6.000000);
+    routineTimer.add(10.050000);
     // update component parameters for each repeat
     PracticeText.setText(practicetext);
     key_resp_2.keys = undefined;
@@ -586,6 +634,8 @@ function FastPracticeRoutineBegin(snapshot) {
     FastPracticeComponents.push(PracticeText);
     FastPracticeComponents.push(key_resp_2);
     FastPracticeComponents.push(scaretone);
+    FastPracticeComponents.push(FTrue);
+    FastPracticeComponents.push(JFALSE);
     
     FastPracticeComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -681,6 +731,34 @@ function FastPracticeRoutineEachFrame() {
         scaretone.stop();  // stop the sound (if longer than duration)
       }
       scaretone.status = PsychoJS.Status.FINISHED;
+    }
+    
+    // *FTrue* updates
+    if (t >= 0.05 && FTrue.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      FTrue.tStart = t;  // (not accounting for frame time here)
+      FTrue.frameNStart = frameN;  // exact frame index
+      
+      FTrue.setAutoDraw(true);
+    }
+
+    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (FTrue.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      FTrue.setAutoDraw(false);
+    }
+    
+    // *JFALSE* updates
+    if (t >= 0.05 && JFALSE.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      JFALSE.tStart = t;  // (not accounting for frame time here)
+      JFALSE.frameNStart = frameN;  // exact frame index
+      
+      JFALSE.setAutoDraw(true);
+    }
+
+    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (JFALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      JFALSE.setAutoDraw(false);
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -878,7 +956,7 @@ function FastTrialRoutineBegin(snapshot) {
     FastTrialClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(6.000000);
+    routineTimer.add(10.060000);
     // update component parameters for each repeat
     Fasttext.setText(Statement);
     key_resp.keys = undefined;
@@ -897,6 +975,8 @@ function FastTrialRoutineBegin(snapshot) {
     FastTrialComponents.push(Fasttext);
     FastTrialComponents.push(key_resp);
     FastTrialComponents.push(Timer);
+    FastTrialComponents.push(TRUE);
+    FastTrialComponents.push(FALSE);
     
     FastTrialComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -992,6 +1072,34 @@ function FastTrialRoutineEachFrame() {
         Timer.stop();  // stop the sound (if longer than duration)
       }
       Timer.status = PsychoJS.Status.FINISHED;
+    }
+    
+    // *TRUE* updates
+    if (t >= 0.05 && TRUE.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      TRUE.tStart = t;  // (not accounting for frame time here)
+      TRUE.frameNStart = frameN;  // exact frame index
+      
+      TRUE.setAutoDraw(true);
+    }
+
+    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (TRUE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      TRUE.setAutoDraw(false);
+    }
+    
+    // *FALSE* updates
+    if (t >= 0.06 && FALSE.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      FALSE.tStart = t;  // (not accounting for frame time here)
+      FALSE.frameNStart = frameN;  // exact frame index
+      
+      FALSE.setAutoDraw(true);
+    }
+
+    frameRemains = 0.06 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (FALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      FALSE.setAutoDraw(false);
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {

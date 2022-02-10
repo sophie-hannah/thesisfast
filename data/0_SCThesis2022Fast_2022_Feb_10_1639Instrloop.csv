@@ -1,0 +1,14 @@
+﻿FastInstructions,n,Instr1.started_mean,Instr1.started_raw,Instr1.started_std,Instr1.stopped_raw,InstrResponse.keys_raw,InstrResponse.rt_mean,InstrResponse.rt_raw,InstrResponse.rt_std,InstrResponse.started_mean,InstrResponse.started_raw,InstrResponse.started_std,InstrResponse.stopped_raw,order
+"You will be shown a total of 80 statements pertaining to mathematics, science, and social concepts. Your task is to determine whether each statement is true or false as quickly as possible without sacrificing accuracy. Some statements will be difficult and some will be easier.  We do not expect you to know the correct answer for all 80 statements.  Press F to Continue",1.0,11.643013954162598,11.643013954162598,0.0,,'f',1.2225725650787354,1.2225725650787354,0.0,11.643013954162598,11.643013954162598,0.0,,0.0
+"Each statement will appear on your screen for 5 seconds and you will have those 5 seconds to decide if it is true or false before the next statement appears. There will be a beep to inform you that you have 2 seconds remaining. If you do not respond, that answer will be considered incorrect and the task will move on to the next statement. Press F to continue",1.0,12.941741943359375,12.941741943359375,0.0,,'f',0.24470360577106476,0.24470360577106476,0.0,12.941741943359375,12.941741943359375,0.0,,1.0
+"If the statement is true, you will press the “F” key on your keyboard with your left pointer finger; if the statement is false, you will press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,13.225264549255371,13.225264549255371,0.0,,'f',0.1532680094242096,0.1532680094242096,0.0,13.225264549255371,13.225264549255371,0.0,,2.0
+"Prior to completing the study, you will complete 10 practice trials to familiarize yourself with the task. Your performance on these trials will determine your participation in the following study. Press 'F' to continue.",1.0,13.426002502441406,13.426002502441406,0.0,,'f',0.12550613284111023,0.12550613284111023,0.0,13.426002502441406,13.426002502441406,0.0,,3.0
+"If the statement is true, press the “F” key on your keyboard with your left pointer finger; if the statement is false, press the “J” key on your keyboard with your right pointer finger. Press F to continue",1.0,13.59307861328125,13.59307861328125,0.0,,'f',0.16240458190441132,0.16240458190441132,0.0,13.59307861328125,13.59307861328125,0.0,,4.0
+
+extraInfo
+participant,0
+Enter the ID from Qualtrics into the 'Participant' box above. Leave this box blank.,
+date,2022_Feb_10_1639
+expName,SCThesis2022Fast
+psychopyVersion,2021.2.3
+frameRate,60.35532883540298
