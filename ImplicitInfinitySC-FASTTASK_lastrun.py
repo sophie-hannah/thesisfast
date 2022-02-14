@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Mon Feb 14 17:43:02 2022
+    on Mon Feb 14 17:50:54 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -138,7 +138,7 @@ Continue = visual.TextStim(win=win, name='Continue',
     text='Press Space to Continue',
     font='Open Sans',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-    color=[-1.000,-1.000,-1.000), colorSpace='rgb', opacity=None, 
+    color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
 Advance_Resp = keyboard.Keyboard()

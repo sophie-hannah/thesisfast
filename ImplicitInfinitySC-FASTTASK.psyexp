@@ -615,7 +615,7 @@
     </Routine>
     <Routine name="Advance">
       <TextComponent name="Continue">
-        <Param name="color" updates="constant" val="$[-1.000,-1.000,-1.000)" valType="color"/>
+        <Param name="color" updates="constant" val="$[-1.0000, -1.0000, -1.0000]" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -686,6 +686,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="FastPractice"/>
+    <Routine name="Advance"/>
     <LoopTerminator name="Practice"/>
     <Routine name="PracticeEnd"/>
     <LoopInitiator loopType="TrialHandler" name="FastLoop">
@@ -700,6 +701,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="FastTrial"/>
+    <Routine name="Advance"/>
     <LoopTerminator name="FastLoop"/>
     <Routine name="EndStudy"/>
   </Flow>
