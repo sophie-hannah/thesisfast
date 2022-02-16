@@ -302,7 +302,7 @@ async function experimentInit() {
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study. Please return to Qualtrics and input the following unique code into the survey: \n\ncurioustree42',
+    text: 'Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: \n\nCAT123\n\nPress Space to End the Study and Save your Results',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
@@ -1473,6 +1473,7 @@ function EndStudyRoutineBegin(snapshot) {
     EndStudyClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
+    routineTimer.add(30.000000);
     // update component parameters for each repeat
     endstudykey.keys = undefined;
     endstudykey.rt = undefined;
@@ -1525,8 +1526,13 @@ function EndStudyRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { endstudykey.clearEvents(); });
     }
 
+    frameRemains = 0.0 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (endstudykey.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      endstudykey.status = PsychoJS.Status.FINISHED;
+  }
+
     if (endstudykey.status === PsychoJS.Status.STARTED) {
-      let theseKeys = endstudykey.getKeys({keyList: ['f'], waitRelease: false});
+      let theseKeys = endstudykey.getKeys({keyList: ['space'], waitRelease: false});
       _endstudykey_allKeys = _endstudykey_allKeys.concat(theseKeys);
       if (_endstudykey_allKeys.length > 0) {
         endstudykey.keys = _endstudykey_allKeys[_endstudykey_allKeys.length - 1].name;  // just the last key pressed
@@ -1554,7 +1560,7 @@ function EndStudyRoutineEachFrame() {
     });
     
     // refresh the screen if continuing
-    if (continueRoutine) {
+    if (continueRoutine && routineTimer.getTime() > 0) {
       return Scheduler.Event.FLIP_REPEAT;
     } else {
       return Scheduler.Event.NEXT;
@@ -1578,9 +1584,6 @@ function EndStudyRoutineEnd() {
         }
     
     endstudykey.stop();
-    // the Routine "EndStudy" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
     return Scheduler.Event.NEXT;
   };
 }
