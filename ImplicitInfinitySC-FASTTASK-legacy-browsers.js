@@ -63,9 +63,9 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'},
+    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'},
     {'name': 'InfinityThesisStimuliFAST.xlsx', 'path': 'InfinityThesisStimuliFAST.xlsx'},
-    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'}
+    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'}
   ]
 });
 
