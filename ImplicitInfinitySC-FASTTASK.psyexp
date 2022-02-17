@@ -288,7 +288,7 @@
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.06" valType="code"/>
+        <Param name="startVal" updates="None" val="0.05" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="10" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>

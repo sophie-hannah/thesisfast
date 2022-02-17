@@ -1128,7 +1128,7 @@ function FastTrialRoutineBegin(snapshot) {
     FastTrialClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(10.060000);
+    routineTimer.add(10.050000);
     // update component parameters for each repeat
     Fasttext.setText(Statement);
     key_resp.keys = undefined;
@@ -1260,7 +1260,7 @@ function FastTrialRoutineEachFrame() {
     }
     
     // *FALSE* updates
-    if (t >= 0.06 && FALSE.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0.05 && FALSE.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       FALSE.tStart = t;  // (not accounting for frame time here)
       FALSE.frameNStart = frameN;  // exact frame index
@@ -1268,7 +1268,7 @@ function FastTrialRoutineEachFrame() {
       FALSE.setAutoDraw(true);
     }
 
-    frameRemains = 0.06 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (FALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       FALSE.setAutoDraw(false);
     }
