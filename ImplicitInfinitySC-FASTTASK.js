@@ -668,7 +668,7 @@ function FastPracticeRoutineBegin(snapshot) {
     FastPracticeClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(10.050000);
+    routineTimer.add(6.050000);
     // update component parameters for each repeat
     PracticeText.setText(practicetext);
     key_resp_2.keys = undefined;
@@ -789,7 +789,7 @@ function FastPracticeRoutineEachFrame() {
       FTrue.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (FTrue.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       FTrue.setAutoDraw(false);
     }
@@ -803,7 +803,7 @@ function FastPracticeRoutineEachFrame() {
       JFALSE.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (JFALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       JFALSE.setAutoDraw(false);
     }
@@ -1128,7 +1128,7 @@ function FastTrialRoutineBegin(snapshot) {
     FastTrialClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(10.050000);
+    routineTimer.add(6.050000);
     // update component parameters for each repeat
     Fasttext.setText(Statement);
     key_resp.keys = undefined;
@@ -1254,7 +1254,7 @@ function FastTrialRoutineEachFrame() {
       TRUE.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (TRUE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       TRUE.setAutoDraw(false);
     }
@@ -1268,7 +1268,7 @@ function FastTrialRoutineEachFrame() {
       FALSE.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (FALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       FALSE.setAutoDraw(false);
     }
