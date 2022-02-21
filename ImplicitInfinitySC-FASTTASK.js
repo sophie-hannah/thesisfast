@@ -150,7 +150,7 @@ async function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'Testing if experiment is uploading',
+    text: 'Testing if experiment is uploading?',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
