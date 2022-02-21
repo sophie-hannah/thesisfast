@@ -740,7 +740,7 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Testing if experiment is uploading" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>

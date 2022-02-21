@@ -472,7 +472,7 @@ function text_2RoutineEachFrame() {
       text_3.setAutoDraw(true);
     }
 
-    frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (text_3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       text_3.setAutoDraw(false);
     }
