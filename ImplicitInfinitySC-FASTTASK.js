@@ -104,7 +104,7 @@ async function updateInfo() {
 var MouseClock;
 var FastInstrClock;
 var Instr1;
-var InstrResponse;
+var INSTRESP;
 var FastPracticeClock;
 var fixcross1;
 var PracticeText;
@@ -152,7 +152,7 @@ async function experimentInit() {
     depth: 0.0 
   });
   
-  InstrResponse = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
+  INSTRESP = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "FastPractice"
   FastPracticeClock = new util.Clock();
@@ -529,7 +529,7 @@ async function FastLoopLoopEnd() {
 }
 
 
-var _InstrResponse_allKeys;
+var _INSTRESP_allKeys;
 var FastInstrComponents;
 function FastInstrRoutineBegin(snapshot) {
   return async function () {
@@ -543,13 +543,13 @@ function FastInstrRoutineBegin(snapshot) {
     routineTimer.add(30.000000);
     // update component parameters for each repeat
     Instr1.setText(FastInstructions);
-    InstrResponse.keys = undefined;
-    InstrResponse.rt = undefined;
-    _InstrResponse_allKeys = [];
+    INSTRESP.keys = undefined;
+    INSTRESP.rt = undefined;
+    _INSTRESP_allKeys = [];
     // keep track of which components have finished
     FastInstrComponents = [];
     FastInstrComponents.push(Instr1);
-    FastInstrComponents.push(InstrResponse);
+    FastInstrComponents.push(INSTRESP);
     
     for (const thisComponent of FastInstrComponents)
       if ('status' in thisComponent)
@@ -582,29 +582,29 @@ function FastInstrRoutineEachFrame() {
       Instr1.setAutoDraw(false);
     }
     
-    // *InstrResponse* updates
-    if (t >= 0 && InstrResponse.status === PsychoJS.Status.NOT_STARTED) {
+    // *INSTRESP* updates
+    if (t >= 0.0 && INSTRESP.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      InstrResponse.tStart = t;  // (not accounting for frame time here)
-      InstrResponse.frameNStart = frameN;  // exact frame index
+      INSTRESP.tStart = t;  // (not accounting for frame time here)
+      INSTRESP.frameNStart = frameN;  // exact frame index
       
       // keyboard checking is just starting
-      psychoJS.window.callOnFlip(function() { InstrResponse.clock.reset(); });  // t=0 on next screen flip
-      psychoJS.window.callOnFlip(function() { InstrResponse.start(); }); // start on screen flip
-      psychoJS.window.callOnFlip(function() { InstrResponse.clearEvents(); });
+      psychoJS.window.callOnFlip(function() { INSTRESP.clock.reset(); });  // t=0 on next screen flip
+      psychoJS.window.callOnFlip(function() { INSTRESP.start(); }); // start on screen flip
+      psychoJS.window.callOnFlip(function() { INSTRESP.clearEvents(); });
     }
 
-    frameRemains = 0 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (InstrResponse.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      InstrResponse.status = PsychoJS.Status.FINISHED;
+    frameRemains = 0.0 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (INSTRESP.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      INSTRESP.status = PsychoJS.Status.FINISHED;
   }
 
-    if (InstrResponse.status === PsychoJS.Status.STARTED) {
-      let theseKeys = InstrResponse.getKeys({keyList: ['space'], waitRelease: false});
-      _InstrResponse_allKeys = _InstrResponse_allKeys.concat(theseKeys);
-      if (_InstrResponse_allKeys.length > 0) {
-        InstrResponse.keys = _InstrResponse_allKeys[_InstrResponse_allKeys.length - 1].name;  // just the last key pressed
-        InstrResponse.rt = _InstrResponse_allKeys[_InstrResponse_allKeys.length - 1].rt;
+    if (INSTRESP.status === PsychoJS.Status.STARTED) {
+      let theseKeys = INSTRESP.getKeys({keyList: ['space'], waitRelease: false});
+      _INSTRESP_allKeys = _INSTRESP_allKeys.concat(theseKeys);
+      if (_INSTRESP_allKeys.length > 0) {
+        INSTRESP.keys = _INSTRESP_allKeys[_INSTRESP_allKeys.length - 1].name;  // just the last key pressed
+        INSTRESP.rt = _INSTRESP_allKeys[_INSTRESP_allKeys.length - 1].rt;
         // a response ends the routine
         continueRoutine = false;
       }
@@ -645,13 +645,13 @@ function FastInstrRoutineEnd() {
         thisComponent.setAutoDraw(false);
       }
     }
-    psychoJS.experiment.addData('InstrResponse.keys', InstrResponse.keys);
-    if (typeof InstrResponse.keys !== 'undefined') {  // we had a response
-        psychoJS.experiment.addData('InstrResponse.rt', InstrResponse.rt);
+    psychoJS.experiment.addData('INSTRESP.keys', INSTRESP.keys);
+    if (typeof INSTRESP.keys !== 'undefined') {  // we had a response
+        psychoJS.experiment.addData('INSTRESP.rt', INSTRESP.rt);
         routineTimer.reset();
         }
     
-    InstrResponse.stop();
+    INSTRESP.stop();
     return Scheduler.Event.NEXT;
   };
 }
