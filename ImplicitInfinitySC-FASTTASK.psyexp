@@ -21,7 +21,7 @@
     <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
     <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
     <Param name="Screen" updates="None" val="1" valType="num"/>
-    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show info dlg" updates="None" val="False" valType="bool"/>
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
@@ -267,7 +267,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="6" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="F=TRUE" valType="str"/>
+        <Param name="text" updates="constant" val="TRUE" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -292,7 +292,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="6" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="J=FALSE" valType="str"/>
+        <Param name="text" updates="constant" val="FALSE" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -390,7 +390,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="30" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: &amp;#10;&amp;#10;CAT123&amp;#10;&amp;#10;Press Space to finish study and wait for message “thank you for your patience” to press ‘ok’ and return to qualtrics" valType="str"/>
+        <Param name="text" updates="constant" val="Thank you for completing this study! &amp;#10;&amp;#10;Please remember the following completion code to enter into TurkPrime (you may want to write it down): &amp;#10;&amp;#10;CAT123&amp;#10;&amp;#10;DO NOT EXIT PAGE UNTIL YOU SEE MESSAGE:&amp;#10;“Thank you for your patience” &amp;#10;Once this message appears, press okay and return to TurkPrime&amp;#10;Press SPACE to complete study" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -538,7 +538,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="6" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="F=TRUE" valType="str"/>
+        <Param name="text" updates="constant" val="TRUE" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -563,7 +563,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="6" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="J=FALSE" valType="str"/>
+        <Param name="text" updates="constant" val="FALSE" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>

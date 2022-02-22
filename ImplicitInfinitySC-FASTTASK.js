@@ -187,7 +187,7 @@ async function experimentInit() {
   FTrue = new visual.TextStim({
     win: psychoJS.window,
     name: 'FTrue',
-    text: 'F=TRUE',
+    text: 'TRUE',
     font: 'Open Sans',
     units: undefined, 
     pos: [(- 0.5), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -198,7 +198,7 @@ async function experimentInit() {
   JFALSE = new visual.TextStim({
     win: psychoJS.window,
     name: 'JFALSE',
-    text: 'J=FALSE',
+    text: 'FALSE',
     font: 'Open Sans',
     units: undefined, 
     pos: [0.5, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -271,7 +271,7 @@ async function experimentInit() {
   TRUE = new visual.TextStim({
     win: psychoJS.window,
     name: 'TRUE',
-    text: 'F=TRUE',
+    text: 'TRUE',
     font: 'Open Sans',
     units: undefined, 
     pos: [(- 0.5), 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -282,7 +282,7 @@ async function experimentInit() {
   FALSE = new visual.TextStim({
     win: psychoJS.window,
     name: 'FALSE',
-    text: 'J=FALSE',
+    text: 'FALSE',
     font: 'Open Sans',
     units: undefined, 
     pos: [0.5, 0.3], height: 0.06,  wrapWidth: undefined, ori: 0.0,
@@ -310,7 +310,7 @@ async function experimentInit() {
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study. Please enter the following unique code into Qualtrics to prove you have completed the study: \n\nCAT123\n\nPress Space to finish study and wait for message “thank you for your patience” to press ‘ok’ and return to qualtrics',
+    text: 'Thank you for completing this study! \n\nPlease remember the following completion code to enter into TurkPrime (you may want to write it down): \n\nCAT123\n\nDO NOT EXIT PAGE UNTIL YOU SEE MESSAGE:\n“Thank you for your patience” \nOnce this message appears, press okay and return to TurkPrime\nPress SPACE to complete study',
     font: 'Open Sans',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
