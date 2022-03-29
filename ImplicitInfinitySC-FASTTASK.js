@@ -72,8 +72,8 @@ psychoJS.start({
   expInfo: expInfo,
   resources: [
     {'name': 'InfinityThesisStimuliFAST.xlsx', 'path': 'InfinityThesisStimuliFAST.xlsx'},
-    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'},
-    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'}
+    {'name': 'SpeededInstructionsSheet.xlsx', 'path': 'SpeededInstructionsSheet.xlsx'},
+    {'name': 'InfinityThesisPracticeFast.xlsx', 'path': 'InfinityThesisPracticeFast.xlsx'}
   ]
 });
 
@@ -310,10 +310,10 @@ async function experimentInit() {
   EndStudyText = new visual.TextStim({
     win: psychoJS.window,
     name: 'EndStudyText',
-    text: 'Thank you for completing this study! \n\nPlease remember the following completion code to enter into TurkPrime (you may want to write it down): \n\nCAT123\n\nDO NOT EXIT PAGE UNTIL YOU SEE MESSAGE:\n“Thank you for your patience” \nOnce this message appears, press okay and return to TurkPrime\nPress SPACE to complete study',
+    text: 'Thank you for completing this study! \n\nPlease remember the following completion code to enter into TurkPrime (you may want to write it down): \n\nCAT123\n\n*SONA Participants do not need to enter a code*\n\nDO NOT EXIT PAGE UNTIL YOU SEE MESSAGE:\n“Thank you for your patience” \nOnce this message appears, press okay and return to TurkPrime\nPress SPACE to complete study',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),  opacity: undefined,
     depth: 0.0 
   });
@@ -540,7 +540,7 @@ function FastInstrRoutineBegin(snapshot) {
     FastInstrClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(30.000000);
+    routineTimer.add(31.000000);
     // update component parameters for each repeat
     Instr1.setText(FastInstructions);
     INSTRESP.keys = undefined;
@@ -583,7 +583,7 @@ function FastInstrRoutineEachFrame() {
     }
     
     // *INSTRESP* updates
-    if (t >= 0.0 && INSTRESP.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && INSTRESP.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       INSTRESP.tStart = t;  // (not accounting for frame time here)
       INSTRESP.frameNStart = frameN;  // exact frame index
@@ -594,7 +594,7 @@ function FastInstrRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { INSTRESP.clearEvents(); });
     }
 
-    frameRemains = 0.0 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 30 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (INSTRESP.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       INSTRESP.status = PsychoJS.Status.FINISHED;
   }
@@ -668,7 +668,7 @@ function FastPracticeRoutineBegin(snapshot) {
     FastPracticeClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(6.050000);
+    routineTimer.add(5.000000);
     // update component parameters for each repeat
     PracticeText.setText(practicetext);
     key_resp_2.keys = undefined;
@@ -724,7 +724,7 @@ function FastPracticeRoutineEachFrame() {
       PracticeText.setAutoDraw(true);
     }
 
-    frameRemains = 1 + 5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (PracticeText.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       PracticeText.setAutoDraw(false);
     }
@@ -741,7 +741,7 @@ function FastPracticeRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { key_resp_2.clearEvents(); });
     }
 
-    frameRemains = 1 + 5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (key_resp_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       key_resp_2.status = PsychoJS.Status.FINISHED;
   }
@@ -764,7 +764,7 @@ function FastPracticeRoutineEachFrame() {
     }
     
     // start/stop scaretone
-    if (t >= 3.5 && scaretone.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 2.5 && scaretone.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       scaretone.tStart = t;  // (not accounting for frame time here)
       scaretone.frameNStart = frameN;  // exact frame index
@@ -772,7 +772,7 @@ function FastPracticeRoutineEachFrame() {
       psychoJS.window.callOnFlip(function(){ scaretone.play(); });  // screen flip
       scaretone.status = PsychoJS.Status.STARTED;
     }
-    frameRemains = 3.5 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 2.5 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (scaretone.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       if (0.2 > 0.5) {
         scaretone.stop();  // stop the sound (if longer than duration)
@@ -781,7 +781,7 @@ function FastPracticeRoutineEachFrame() {
     }
     
     // *FTrue* updates
-    if (t >= 0.05 && FTrue.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && FTrue.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       FTrue.tStart = t;  // (not accounting for frame time here)
       FTrue.frameNStart = frameN;  // exact frame index
@@ -789,13 +789,13 @@ function FastPracticeRoutineEachFrame() {
       FTrue.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (FTrue.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       FTrue.setAutoDraw(false);
     }
     
     // *JFALSE* updates
-    if (t >= 0.05 && JFALSE.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && JFALSE.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       JFALSE.tStart = t;  // (not accounting for frame time here)
       JFALSE.frameNStart = frameN;  // exact frame index
@@ -803,7 +803,7 @@ function FastPracticeRoutineEachFrame() {
       JFALSE.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (JFALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       JFALSE.setAutoDraw(false);
     }
@@ -1128,7 +1128,7 @@ function FastTrialRoutineBegin(snapshot) {
     FastTrialClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(6.050000);
+    routineTimer.add(5.000000);
     // update component parameters for each repeat
     Fasttext.setText(Statement);
     key_resp.keys = undefined;
@@ -1189,7 +1189,7 @@ function FastTrialRoutineEachFrame() {
       Fasttext.setAutoDraw(true);
     }
 
-    frameRemains = 1 + 5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (Fasttext.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       Fasttext.setAutoDraw(false);
     }
@@ -1206,7 +1206,7 @@ function FastTrialRoutineEachFrame() {
       psychoJS.window.callOnFlip(function() { key_resp.clearEvents(); });
     }
 
-    frameRemains = 1 + 5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (key_resp.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       key_resp.status = PsychoJS.Status.FINISHED;
   }
@@ -1229,7 +1229,7 @@ function FastTrialRoutineEachFrame() {
     }
     
     // start/stop Timer
-    if (t >= 3.5 && Timer.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 2.5 && Timer.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       Timer.tStart = t;  // (not accounting for frame time here)
       Timer.frameNStart = frameN;  // exact frame index
@@ -1237,7 +1237,7 @@ function FastTrialRoutineEachFrame() {
       psychoJS.window.callOnFlip(function(){ Timer.play(); });  // screen flip
       Timer.status = PsychoJS.Status.STARTED;
     }
-    frameRemains = 3.5 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 2.5 + 0.2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (Timer.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       if (0.2 > 0.5) {
         Timer.stop();  // stop the sound (if longer than duration)
@@ -1246,7 +1246,7 @@ function FastTrialRoutineEachFrame() {
     }
     
     // *TRUE* updates
-    if (t >= 0.05 && TRUE.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && TRUE.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       TRUE.tStart = t;  // (not accounting for frame time here)
       TRUE.frameNStart = frameN;  // exact frame index
@@ -1254,13 +1254,13 @@ function FastTrialRoutineEachFrame() {
       TRUE.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (TRUE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       TRUE.setAutoDraw(false);
     }
     
     // *FALSE* updates
-    if (t >= 0.05 && FALSE.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 1 && FALSE.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       FALSE.tStart = t;  // (not accounting for frame time here)
       FALSE.frameNStart = frameN;  // exact frame index
@@ -1268,7 +1268,7 @@ function FastTrialRoutineEachFrame() {
       FALSE.setAutoDraw(true);
     }
 
-    frameRemains = 0.05 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 1 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (FALSE.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       FALSE.setAutoDraw(false);
     }
